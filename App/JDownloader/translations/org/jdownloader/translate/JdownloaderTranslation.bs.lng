@@ -388,6 +388,7 @@ lit_add_subtitles=Dodaj Titlove
 lit_add_unknown_formats=Dodaj nepoznate formate (preporučeno)
 lit_audio_bitrate=Audio Tempo
 lit_audio_codec=Audio Kodek
+lit_audio_type=Audio tip
 lit_connections=Konekcije
 lit_download_limit_exceeded=Prekoračen je download limit!
 lit_enable_fast_linkcheck=Omogućiti brzu provjeru linka? Veličina dokumenta neće biti prikazana dok se download ne pokrene ili izvrši ručna provejra linka!

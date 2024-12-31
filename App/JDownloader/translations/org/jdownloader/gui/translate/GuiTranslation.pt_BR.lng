@@ -633,6 +633,7 @@ IfFileExistsDialog_layoutDialogContent_skip_=Ignorar arquivo
 ImageTyperzSolver_gettypeName_=imagetyperz.com
 ImportAllMenusAdvancedAction_actionPerformed=Importar todos os Menus
 ImportMenuItemsAction=Importar todas as configurações do Menu
+IndexColumn_IndexColumn=Índice
 InfoPanel_InfoPanel_customname_help=Forneça um nome para esta ação...
 InfoPanel_InfoPanel_hidden_2=Item do menu está visível
 InfoPanel_InfoPanel_itemname=Nome

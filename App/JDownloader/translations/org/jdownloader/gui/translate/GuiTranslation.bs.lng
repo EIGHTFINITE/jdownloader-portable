@@ -633,6 +633,7 @@ IfFileExistsDialog_layoutDialogContent_skip_=Preskoči dokument
 ImageTyperzSolver_gettypeName_=imagetyperz.com
 ImportAllMenusAdvancedAction_actionPerformed=Importuj sve Menie
 ImportMenuItemsAction=Importuj sva Podešenja Menia
+IndexColumn_IndexColumn=Indeks
 InfoPanel_InfoPanel_customname_help=Unesite ime za ovu akciju
 InfoPanel_InfoPanel_hidden_2=Stavka menia je vidljiva
 InfoPanel_InfoPanel_itemname=Ime
