@@ -2,10 +2,41 @@
   "artefact":"com.formdev/flatlaf",
   "dependencies":null,
   "filter":["flatlaf.jar"],
-  "history":[],
+  "history":[
+    {
+      "changes":null,
+      "date":"2024-10-18T20:28:27.206+02:00",
+      "dependencies":null,
+      "description":"Flat Look and Feel",
+      "files":null,
+      "hashes":{"flatlaf.jar":"5eca889c0da57ea0278c41f270929c7354e4348cb5f6956db417afa6d86a9253"},
+      "licenses":[{
+        "name":"The Apache License, Version 2.0",
+        "url":"https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }],
+      "minJRE":"JVM_1_8",
+      "name":"FlatLaf",
+      "version":"3.5.2"
+    },
+    {
+      "changes":"3.5.3\t: ## Change Log\r\n\r\n#### Fixed bugs\r\n\r\n- HTML: Fixed wrong rendering if HTML text contains `<style>` tag with\r\n  attributes (e.g. `<style type='text/css'>`). (issue #905; regression in 3.5.1)\r\n- FlatLaf window decorations:\r\n  - Windows: Fixed possible deadlock with TabbedPane in window title area in\r\n    \"full window content\" mode. (issue #909)\r\n  - Windows: Fixed wrong layout in maximized frame after changing screen scale\r\n    factor. (issue #904)\r\n  - Linux: Fixed continuous cursor toggling between resize and standard cursor\r\n    when resizing window. (issue #907)\r\n  - Fixed sometimes broken window moving with SplitPane in window title area in\r\n    \"full window content\" mode. (issue #926)\r\n- Popup: On Windows 10, fixed misplaced popup drop shadow. (issue #911; regression in 3.5)\r\n- Popup: Fixed NPE if `GraphicsConfiguration` is `null` on Windows. (issue #921)\r\n- Theme Editor: Fixed using color picker on secondary screen.\r\n- Fixed detection of Windows 11 if custom exe launcher does not specify Windows 10+\r\n  compatibility in application manifest. (issue #916)\r\n- Linux: Fixed slightly different font size (or letter width) used to paint HTML\r\n  text when default font family is _Cantarell_ (e.g. on Fedora). (issue #912)\r\n\r\n#### Other Changes\r\n\r\n- Class `FlatPropertiesLaf` now supports FlatLaf macOS themes as base themes.\r\n",
+      "date":"2024-12-09T09:13:19.362+01:00",
+      "dependencies":null,
+      "description":"Flat Look and Feel",
+      "files":null,
+      "hashes":{"flatlaf.jar":"e8b74eb35b076eb405068e22b9aa180538f065adcf9420116d92c673336623ea"},
+      "licenses":[{
+        "name":"The Apache License, Version 2.0",
+        "url":"https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }],
+      "minJRE":"JVM_1_8",
+      "name":"FlatLaf",
+      "version":"3.5.3"
+    }
+  ],
   "installed":{
-    "changes":null,
-    "date":"2024-10-18T20:28:27.206+02:00",
+    "changes":"3.5.4\t: Fixes a regression in 3.5.3. If you use 3.5.3 it is strongly recommended to upgrade to 3.5.4.\r\n\r\n## Change Log\r\n\r\n- HTML: Fixed NPE when using HTML text on a component with `null` font.\r\n  (issue #930; PR #931; regression in 3.5)\r\n- Linux: Fixed NPE when using FlatLaf window decorations and switching theme.\r\n  (issue #933; regression in 3.5.3)\r\n",
+    "date":"2024-12-09T09:39:25.53+01:00",
     "dependencies":null,
     "description":"Flat Look and Feel",
     "files":[
@@ -132,14 +163,14 @@
       "flatlaf.pom.sha512",
       "meta.json"
     ],
-    "hashes":{"flatlaf.jar":"5eca889c0da57ea0278c41f270929c7354e4348cb5f6956db417afa6d86a9253"},
+    "hashes":{"flatlaf.jar":"3c34b6aeb2f170a954c4358647eb43b68b447a2c351ff311072f7157a5d4e2fe"},
     "licenses":[{
       "name":"The Apache License, Version 2.0",
       "url":"https://www.apache.org/licenses/LICENSE-2.0.txt"
     }],
     "minJRE":"JVM_1_8",
     "name":"FlatLaf",
-    "version":"3.5.2"
+    "version":"3.5.4"
   },
   "minJRE":"1.8",
   "provider":"maven",

@@ -2,49 +2,80 @@
   "artefact":"org.bouncycastle/bctls-jdk15to18",
   "dependencies":null,
   "filter":null,
-  "history":[{
-    "changes":null,
-    "date":"2024-04-24T11:44:16+02:00",
-    "dependencies":[
-      {
-        "groupId":"org.bouncycastle",
-        "artifactId":"bcprov-jdk15to18",
-        "version":"1.78.1",
-        "type":"jar"
-      },
-      {
-        "groupId":"org.bouncycastle",
-        "artifactId":"bcutil-jdk15to18",
-        "version":"1.78.1",
-        "type":"jar"
-      }
-    ],
-    "description":"The Bouncy Castle Java APIs for TLS and DTLS, including a provider for the JSSE.",
-    "files":null,
-    "hashes":{"bctls-jdk15on.jar":"b7ac4d55c1852e306f7771fa654bcaa1ffc18d67adb4d4f6c1f98f82e2757ef0"},
-    "licenses":[{
-      "name":"Bouncy Castle Licence",
-      "url":"http://www.bouncycastle.org/licence.html",
-      "distribution":"repo"
-    }],
-    "minJRE":"JVM_1_5",
-    "name":"Bouncy Castle JSSE provider and TLS/DTLS API",
-    "version":"1.78.1"
-  }],
+  "history":[
+    {
+      "changes":null,
+      "date":"2024-04-24T11:44:16+02:00",
+      "dependencies":[
+        {
+          "groupId":"org.bouncycastle",
+          "artifactId":"bcprov-jdk15to18",
+          "version":"1.78.1",
+          "type":"jar"
+        },
+        {
+          "groupId":"org.bouncycastle",
+          "artifactId":"bcutil-jdk15to18",
+          "version":"1.78.1",
+          "type":"jar"
+        }
+      ],
+      "description":"The Bouncy Castle Java APIs for TLS and DTLS, including a provider for the JSSE.",
+      "files":null,
+      "hashes":{"bctls-jdk15on.jar":"b7ac4d55c1852e306f7771fa654bcaa1ffc18d67adb4d4f6c1f98f82e2757ef0"},
+      "licenses":[{
+        "name":"Bouncy Castle Licence",
+        "url":"http://www.bouncycastle.org/licence.html",
+        "distribution":"repo"
+      }],
+      "minJRE":"JVM_1_5",
+      "name":"Bouncy Castle JSSE provider and TLS/DTLS API",
+      "version":"1.78.1"
+    },
+    {
+      "changes":"1.79\t: Defects Fixed\r\n - Leading zeroes were sometimes dropped from Ed25519 signatures leading to verification errors in the PGP API. This has been fixed.\r\n - Default version string for Armored Output is now set correctly in 18on build.\r\n - The Elephant cipher would fail on large messages. This has been fixed.\r\n - CMSSignedData.replaceSigners() would re-encode the digest algorithms block, occassionally dropping ones where NULL had been previously added as an algorithm parameter. The method now attempts to only use the original digest algorithm identifiers.\r\n - ERSInputStreamData would fail to generate the correct hash if called a second time with a different hash algorithm. This has been fixed.\r\n - A downcast in the CrlCache which would cause FTP based CRLs to fail to load has been removed.\r\n - ECUtil.getNamedCurveOid() now trims curve names of excess space before look up.\r\n - The PhotonBeetle and Xoodyak did not reset properly after a doFinal() call. This has been fixed.\r\n - Malformed AlgorithmIdentifiers in CertIDs could cause caching issues in the OCSP cache. This has been fixed.\r\n - With Java 21 a provider service class will now be returned with a null class name where previously a null would have been returned for a service. This can cause a NullPointerException to be thrown by the BC provider if a non-existant service is requested. This issue has now been worked around.\r\n - CMS: OtherKeyAttribute.keyAttr now treated as optional.\r\n - CMS: EnvelopedData and AuthEnvelopedData could calculate the wrong versions. This has been fixed.\r\n \r\nAdditional Features and Functionality\r\n - Object Identifiers have been added for ML-KEM, ML-DSA, and SLH-DSA.\r\n - The PQC algorithms, ML-KEM, ML-DSA (including pre-hash), and SLH-DSA (including pre-hash) have been added to the BC provider and the lightweight API.\r\n - A new spec, ContextParameterSpec, has been added to support signature contexts for ML-DSA and SLH-DSA.\r\n - BCJSSE: Added support for security property \"jdk.tls.server.defaultDHEParameters\" (disabled in FIPS mode).\r\n - BCJSSE: Added support for signature_algorithms_cert configuration via \"org.bouncycastle.jsse.client.SignatureSchemesCert\" and \"org.bouncycastle.jsse.server.SignatureSchemesCert\" system properties or BCSSLParameters property \"SignatureSchemesCert\".\r\n - BCJSSE: Added support for boolean system property \"org.bouncycastle.jsse.fips.allowGCMCiphersIn12\" (false by default).\r\n - (D)TLS: Remove redundant verification of self-generated RSA signatures.\r\n - CompositePrivateKeys now support the latest revision of the composite signature draft.\r\n - Delta Certificates now support the latest revision of the delta certificate extension draft.\r\n - A general KeyIdentifier class, encapsulating both PGP KeyID and the PGP key fingerprint has been added to the PGP API.\r\n - Support for the LibrePGP PreferredEncryptionModes signature subpacket has been added to the PGP API.\r\n - Support Version 6 signatures, including salts, has been added to the PGP API.\r\n - Support for the PreferredKeyServer signature supacket has been added to the PGP API.\r\n - Support for RFC 9269, \"Using KEMs in Cryptographic Message Syntax (CMS)\", has been added to the CMS API.\r\n - Support for the Argon2 S2K has been added to the PGP API.\r\n - The system property \"org.bouncycastle.pemreader.lax\" has been introduced for situations where the BC PEM parsing is now too strict.\r\n - The system property \"org.bouncycastle.ec.disable_f2m\" has been introduced to allow F2m EC support to be disabled.",
+      "date":"2024-10-30T13:45:45.711+01:00",
+      "dependencies":[
+        {
+          "groupId":"org.bouncycastle",
+          "artifactId":"bcprov-jdk15to18",
+          "version":"1.79",
+          "type":"jar"
+        },
+        {
+          "groupId":"org.bouncycastle",
+          "artifactId":"bcutil-jdk15to18",
+          "version":"1.79",
+          "type":"jar"
+        }
+      ],
+      "description":"The Bouncy Castle Java APIs for TLS and DTLS, including a provider for the JSSE.",
+      "files":null,
+      "hashes":{"bctls-jdk15on.jar":"d819ecaf7c192ededad3af7946618fd22970896186626f50eb423d3466daa635"},
+      "licenses":[{
+        "name":"Bouncy Castle Licence",
+        "url":"http://www.bouncycastle.org/licence.html",
+        "distribution":"repo"
+      }],
+      "minJRE":"JVM_1_5",
+      "name":"Bouncy Castle JSSE provider and TLS/DTLS API",
+      "version":"1.79"
+    }
+  ],
   "installed":{
-    "changes":"1.79\t: Defects Fixed\r\n - Leading zeroes were sometimes dropped from Ed25519 signatures leading to verification errors in the PGP API. This has been fixed.\r\n - Default version string for Armored Output is now set correctly in 18on build.\r\n - The Elephant cipher would fail on large messages. This has been fixed.\r\n - CMSSignedData.replaceSigners() would re-encode the digest algorithms block, occassionally dropping ones where NULL had been previously added as an algorithm parameter. The method now attempts to only use the original digest algorithm identifiers.\r\n - ERSInputStreamData would fail to generate the correct hash if called a second time with a different hash algorithm. This has been fixed.\r\n - A downcast in the CrlCache which would cause FTP based CRLs to fail to load has been removed.\r\n - ECUtil.getNamedCurveOid() now trims curve names of excess space before look up.\r\n - The PhotonBeetle and Xoodyak did not reset properly after a doFinal() call. This has been fixed.\r\n - Malformed AlgorithmIdentifiers in CertIDs could cause caching issues in the OCSP cache. This has been fixed.\r\n - With Java 21 a provider service class will now be returned with a null class name where previously a null would have been returned for a service. This can cause a NullPointerException to be thrown by the BC provider if a non-existant service is requested. This issue has now been worked around.\r\n - CMS: OtherKeyAttribute.keyAttr now treated as optional.\r\n - CMS: EnvelopedData and AuthEnvelopedData could calculate the wrong versions. This has been fixed.\r\n \r\nAdditional Features and Functionality\r\n - Object Identifiers have been added for ML-KEM, ML-DSA, and SLH-DSA.\r\n - The PQC algorithms, ML-KEM, ML-DSA (including pre-hash), and SLH-DSA (including pre-hash) have been added to the BC provider and the lightweight API.\r\n - A new spec, ContextParameterSpec, has been added to support signature contexts for ML-DSA and SLH-DSA.\r\n - BCJSSE: Added support for security property \"jdk.tls.server.defaultDHEParameters\" (disabled in FIPS mode).\r\n - BCJSSE: Added support for signature_algorithms_cert configuration via \"org.bouncycastle.jsse.client.SignatureSchemesCert\" and \"org.bouncycastle.jsse.server.SignatureSchemesCert\" system properties or BCSSLParameters property \"SignatureSchemesCert\".\r\n - BCJSSE: Added support for boolean system property \"org.bouncycastle.jsse.fips.allowGCMCiphersIn12\" (false by default).\r\n - (D)TLS: Remove redundant verification of self-generated RSA signatures.\r\n - CompositePrivateKeys now support the latest revision of the composite signature draft.\r\n - Delta Certificates now support the latest revision of the delta certificate extension draft.\r\n - A general KeyIdentifier class, encapsulating both PGP KeyID and the PGP key fingerprint has been added to the PGP API.\r\n - Support for the LibrePGP PreferredEncryptionModes signature subpacket has been added to the PGP API.\r\n - Support Version 6 signatures, including salts, has been added to the PGP API.\r\n - Support for the PreferredKeyServer signature supacket has been added to the PGP API.\r\n - Support for RFC 9269, \"Using KEMs in Cryptographic Message Syntax (CMS)\", has been added to the CMS API.\r\n - Support for the Argon2 S2K has been added to the PGP API.\r\n - The system property \"org.bouncycastle.pemreader.lax\" has been introduced for situations where the BC PEM parsing is now too strict.\r\n - The system property \"org.bouncycastle.ec.disable_f2m\" has been introduced to allow F2m EC support to be disabled.",
-    "date":"2024-10-30T13:45:45.711+01:00",
+    "changes":"1.80\t: Defects Fixed\r\n - A splitting issue for ML-KEM lead to an incorrect size for kemct in KEMRecipientInfos. This has been fixed.\r\n - The PKCS12 KeyStore has been adjusted to prevent accidental doubling of the Oracle trusted certificate attribute (results in an IOException when used with the JVM PKCS12 implementation).\r\n - The SignerInfoGenerator copy constructor was ignoring the certHolder field. This has been fixed.\r\n - The getAlgorithm() method return value for a CompositePrivateKey was not consistent with the corresponding getAlgorithm() return value for the CompositePrivateKey. This has been fixed.\r\n - The international property files were missing from the bcjmail distribution. This has been fixed.\r\n - Issues with ElephantEngine failing on processing large/multi-block messages have been addressed.\r\n - GCFB mode now fully resets on a reset.\r\n - The lightweight algorithm contestants: Elephant, ISAP, PhotonBeetle, Xoodyak now support the use of the AEADParameters class and provide accurate update/doFinal output lengths.\r\n - An unnecessary downcast in CertPathValidatorUtilities was resulting in the ignoring of URLs for FTP based CRLs. This has been fixed.\r\n - A regression in the OpenPGP API could cause NoSuchAlgorithmException to be thrown when attempting to use SHA-256 in some contexts. This has been fixed.\r\n - EtsiTs1029411TypesAuthorization was missing an extension field. This has been added.\r\n - Interoperability issues with single depth LMS keys have been addressed.\r\n \r\nAdditional Features and Functionality\r\n - CompositeSignatures now updated to draft-ietf-lamps-pq-composite-sigs-03.\r\n - ML-KEM, ML-DSA, SLH-DSA, and Composite private keys now use raw encodings as per the latest drafts from IETF 121: draft-ietf-lamps-kyber-certificates-06, draft-ietf-lamps-dilithium-certificates-05, and draft-ietf-lamps-x509-slhdsa.\r\n - Initial support has been added for RFC 9579 PBMAC1 in the PKCS API.\r\n - Support has been added for EC-JPAKE to the lightweight API.\r\n - Support has been added for the direct construction of S/MIME AuthEnvelopedData objects, via the SMIMEAuthEnvelopedData class.\r\n - An override \"org.bouncycastle.asn1.allow_wrong_oid_enc\" property has been added to disable new OID encoding checks (use with caution).\r\n - Support has been added for the PBEParemeterSpec.getParameterSpec() method where supported by the JVM.\r\n - ML-DSA/SLH-DSA now return null for Signature.getParameters() if no context is provided. This allows the algorithms to be used with the existing Java key tool.\r\n - HQC has been updated to reflect the reference implementation released on 2024-10-30.\r\n - Support has been added to the low-level APIs for the OASIS Shamir Secret Splitting algorithms.\r\n - BCJSSE: System property \"org.bouncycastle.jsse.fips.allowGCMCiphersIn12\" no longer used. FIPS TLS 1.2 GCM suites can now be enabled according to JcaTlsCrypto#getFipsGCMNonceGeneratorFactory (see JavaDoc for details) if done in alignment with FIPS requirements.\r\n - Support has been added for OpenPGP V6 PKESK and message encryption.\r\n - PGPSecretKey.copyWithNewPassword() now includes AEAD support.\r\n - The ASCON family of algorithms have been updated in accordance with the published FIPS SP 800-232 draft.",
+    "date":"2025-01-15T10:45:25.88+01:00",
     "dependencies":[
       {
         "groupId":"org.bouncycastle",
         "artifactId":"bcprov-jdk15to18",
-        "version":"1.79",
+        "version":"1.80",
         "type":"jar"
       },
       {
         "groupId":"org.bouncycastle",
         "artifactId":"bcutil-jdk15to18",
-        "version":"1.79",
+        "version":"1.80",
         "type":"jar"
       }
     ],
@@ -93,7 +124,7 @@
       "bctls-jdk15to18.pom.sha512",
       "meta.json"
     ],
-    "hashes":{"bctls-jdk15on.jar":"d819ecaf7c192ededad3af7946618fd22970896186626f50eb423d3466daa635"},
+    "hashes":{"bctls-jdk15on.jar":"9c835d8c9439786a59766dd1e142df2a21dc06978ceedc65d03b1ebfe9b543c1"},
     "licenses":[{
       "name":"Bouncy Castle Licence",
       "url":"http://www.bouncycastle.org/licence.html",
@@ -101,7 +132,7 @@
     }],
     "minJRE":"JVM_1_5",
     "name":"Bouncy Castle JSSE provider and TLS/DTLS API",
-    "version":"1.79"
+    "version":"1.80"
   },
   "minJRE":"1.6",
   "provider":"maven",
