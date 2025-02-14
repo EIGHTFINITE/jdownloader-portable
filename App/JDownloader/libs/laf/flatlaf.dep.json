@@ -1,7 +1,7 @@
 {
   "artefact":"com.formdev/flatlaf",
   "dependencies":null,
-  "filter":["flatlaf.jar"],
+  "filter":["flatlaf.jar", "flatlaf-sources.jar"],
   "history":[
     {
       "changes":null,
@@ -36,7 +36,7 @@
   ],
   "installed":{
     "changes":"3.5.4\t: Fixes a regression in 3.5.3. If you use 3.5.3 it is strongly recommended to upgrade to 3.5.4.\r\n\r\n## Change Log\r\n\r\n- HTML: Fixed NPE when using HTML text on a component with `null` font.\r\n  (issue #930; PR #931; regression in 3.5)\r\n- Linux: Fixed NPE when using FlatLaf window decorations and switching theme.\r\n  (issue #933; regression in 3.5.3)\r\n",
-    "date":"2024-12-09T09:39:25.53+01:00",
+    "date":"2025-02-08T20:07:36.547+01:00",
     "dependencies":null,
     "description":"Flat Look and Feel",
     "files":[
@@ -163,7 +163,10 @@
       "flatlaf.pom.sha512",
       "meta.json"
     ],
-    "hashes":{"flatlaf.jar":"3c34b6aeb2f170a954c4358647eb43b68b447a2c351ff311072f7157a5d4e2fe"},
+    "hashes":{
+      "flatlaf.jar":"3c34b6aeb2f170a954c4358647eb43b68b447a2c351ff311072f7157a5d4e2fe",
+      "../../code-ressourcen/flatlaf-sources.jar":"03670ca443e3d30cbecf6c42aab642fdd576c988a83468d2e7f4e1f8642910a5"
+    },
     "licenses":[{
       "name":"The Apache License, Version 2.0",
       "url":"https://www.apache.org/licenses/LICENSE-2.0.txt"
@@ -174,7 +177,7 @@
   },
   "minJRE":"1.8",
   "provider":"maven",
-  "renames":null,
+  "renames":{"(.*-sources.*)":"../../code-ressourcen/$1"},
   "requiredBy":[],
   "version":null,
   "autoRenameEnabled":true,

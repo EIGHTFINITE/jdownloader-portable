@@ -1,7 +1,10 @@
 {
   "artefact":"org.bouncycastle/bcpkix-jdk15to18",
   "dependencies":null,
-  "filter":null,
+  "filter":[
+    ".*?-jdk15to18\\.jar",
+    ".+(-sources)?\\.jar$"
+  ],
   "history":[
     {
       "changes":null,
@@ -124,7 +127,10 @@
       "bcpkix-jdk15to18.pom.sha512",
       "meta.json"
     ],
-    "hashes":{"bcpkix-jdk15on.jar":"5aee4e9464a7f76f105a30c197bb601d28c87abee2957ccbde75b3fb47d7504a"},
+    "hashes":{
+      "bcpkix-jdk15on.jar":"5aee4e9464a7f76f105a30c197bb601d28c87abee2957ccbde75b3fb47d7504a",
+      "../code-ressourcen/bcpkix-jdk15on-sources.jar":"d8fd2c8cedee6b8acf02da22d4be534066c1c20c5bb7c210211022b39efcd0f2"
+    },
     "licenses":[{
       "name":"Bouncy Castle Licence",
       "url":"http://www.bouncycastle.org/licence.html",
@@ -136,7 +142,10 @@
   },
   "minJRE":"1.6",
   "provider":"maven",
-  "renames":{"jdk15to18":"jdk15on"},
+  "renames":{
+    "jdk15to18":"jdk15on",
+    "(.*-sources.*)":"../code-ressourcen/$1"
+  },
   "requiredBy":[],
   "version":null,
   "autoRenameEnabled":true,

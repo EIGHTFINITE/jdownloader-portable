@@ -1,7 +1,10 @@
 {
   "artefact":"org.bouncycastle/bcutil-jdk15to18",
   "dependencies":null,
-  "filter":null,
+  "filter":[
+    ".*?-jdk15to18\\.jar",
+    ".+(-sources)?\\.jar$"
+  ],
   "history":[
     {
       "changes":null,
@@ -48,7 +51,7 @@
   ],
   "installed":{
     "changes":"1.80\t: Defects Fixed\r\n - A splitting issue for ML-KEM lead to an incorrect size for kemct in KEMRecipientInfos. This has been fixed.\r\n - The PKCS12 KeyStore has been adjusted to prevent accidental doubling of the Oracle trusted certificate attribute (results in an IOException when used with the JVM PKCS12 implementation).\r\n - The SignerInfoGenerator copy constructor was ignoring the certHolder field. This has been fixed.\r\n - The getAlgorithm() method return value for a CompositePrivateKey was not consistent with the corresponding getAlgorithm() return value for the CompositePrivateKey. This has been fixed.\r\n - The international property files were missing from the bcjmail distribution. This has been fixed.\r\n - Issues with ElephantEngine failing on processing large/multi-block messages have been addressed.\r\n - GCFB mode now fully resets on a reset.\r\n - The lightweight algorithm contestants: Elephant, ISAP, PhotonBeetle, Xoodyak now support the use of the AEADParameters class and provide accurate update/doFinal output lengths.\r\n - An unnecessary downcast in CertPathValidatorUtilities was resulting in the ignoring of URLs for FTP based CRLs. This has been fixed.\r\n - A regression in the OpenPGP API could cause NoSuchAlgorithmException to be thrown when attempting to use SHA-256 in some contexts. This has been fixed.\r\n - EtsiTs1029411TypesAuthorization was missing an extension field. This has been added.\r\n - Interoperability issues with single depth LMS keys have been addressed.\r\n \r\nAdditional Features and Functionality\r\n - CompositeSignatures now updated to draft-ietf-lamps-pq-composite-sigs-03.\r\n - ML-KEM, ML-DSA, SLH-DSA, and Composite private keys now use raw encodings as per the latest drafts from IETF 121: draft-ietf-lamps-kyber-certificates-06, draft-ietf-lamps-dilithium-certificates-05, and draft-ietf-lamps-x509-slhdsa.\r\n - Initial support has been added for RFC 9579 PBMAC1 in the PKCS API.\r\n - Support has been added for EC-JPAKE to the lightweight API.\r\n - Support has been added for the direct construction of S/MIME AuthEnvelopedData objects, via the SMIMEAuthEnvelopedData class.\r\n - An override \"org.bouncycastle.asn1.allow_wrong_oid_enc\" property has been added to disable new OID encoding checks (use with caution).\r\n - Support has been added for the PBEParemeterSpec.getParameterSpec() method where supported by the JVM.\r\n - ML-DSA/SLH-DSA now return null for Signature.getParameters() if no context is provided. This allows the algorithms to be used with the existing Java key tool.\r\n - HQC has been updated to reflect the reference implementation released on 2024-10-30.\r\n - Support has been added to the low-level APIs for the OASIS Shamir Secret Splitting algorithms.\r\n - BCJSSE: System property \"org.bouncycastle.jsse.fips.allowGCMCiphersIn12\" no longer used. FIPS TLS 1.2 GCM suites can now be enabled according to JcaTlsCrypto#getFipsGCMNonceGeneratorFactory (see JavaDoc for details) if done in alignment with FIPS requirements.\r\n - Support has been added for OpenPGP V6 PKESK and message encryption.\r\n - PGPSecretKey.copyWithNewPassword() now includes AEAD support.\r\n - The ASCON family of algorithms have been updated in accordance with the published FIPS SP 800-232 draft.",
-    "date":"2025-01-15T10:45:26.540+01:00",
+    "date":"2025-02-08T20:14:58.795+01:00",
     "dependencies":[{
       "groupId":"org.bouncycastle",
       "artifactId":"bcprov-jdk15to18",
@@ -100,7 +103,10 @@
       "bcutil-jdk15to18.pom.sha512",
       "meta.json"
     ],
-    "hashes":{"bcutil-jdk15on.jar":"ae242cacd27df211c695a79d60ad1b1b0577f14922382d0e03fbe6dde1d0eb33"},
+    "hashes":{
+      "bcutil-jdk15on.jar":"ae242cacd27df211c695a79d60ad1b1b0577f14922382d0e03fbe6dde1d0eb33",
+      "../code-ressourcen/bcutil-jdk15on-sources.jar":"ef88345683d3c1939ef5f4e893add7a7ea4261e270196da8744af9ebf8fe019c"
+    },
     "licenses":[{
       "name":"Bouncy Castle Licence",
       "url":"http://www.bouncycastle.org/licence.html",
@@ -112,7 +118,10 @@
   },
   "minJRE":"1.6",
   "provider":"maven",
-  "renames":{"jdk15to18":"jdk15on"},
+  "renames":{
+    "jdk15to18":"jdk15on",
+    "(.*-sources.*)":"../code-ressourcen/$1"
+  },
   "requiredBy":[
     {
       "artefact":"org.bouncycastle/bctls-jdk15to18",
