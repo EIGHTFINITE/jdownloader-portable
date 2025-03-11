@@ -50,6 +50,7 @@
  "libs/laf/syntheticaClassy.jar"                          : "{\r\n\"parentIDList\":[\"synthetica-themes\"]\r\n}",
  "jd/osx"                                                 : "{\r\n\"windows\" : \"FALSE\",\r\n\"linux\":\"FALSE\"\r\n}",
  "translations/org/jdownloader/extensions/growl"          : "{\r\n\"windows\":\"FALSE\",\r\n\"linux\":\"FALSE\"\r\n}",
+ "libs/sevenzipjbindingBsdArm64.jar"                      : "{\r\n\"windows\":\"FALSE\",\r\n\"mac\":\"FALSE\",\r\n\"bsd\":\"TRUE\",\r\n\"linux\":\"FALSE\",\r\n\"arch\":\"ARM\",\r\n\"os64Bit\":\"TRUE\",\r\n\"os32Bit\":\"FALSE\"\r\n}",
  "libs/irclib.jar"                                        : "{\r\n\"parentIDList\":[\"chat\"]\r\n}",
  "translations/org/jdownloader/extensions/translator.jar" : "{\r\n\"parentIDList\":[\"translator\"]\r\n}",
  "themes/standard/org/jdownloader/videos/streaming"       : "{\r\n\"parentIDList\":[\"streaming\"]\r\n}",
