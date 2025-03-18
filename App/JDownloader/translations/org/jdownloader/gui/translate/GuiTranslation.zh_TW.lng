@@ -295,7 +295,6 @@ ContextMenuFactory_createPopup_speed=下載速度限制
 ContextMenuFactory_createPopup_url=顯示下載網址
 ConvertCLRAction_actionPerformed_finished_msg=請複製並貼上到 JDownloader 重新連線的 Liveheader 指令碼區塊。
 ConvertCLRAction_actionPerformed_finished_title=完成 - %s1！
-ConvertCLRAction_actionPerformed_msg=請輸入 Cryptload CLR 重新連線指令碼...
 ConvertCLRAction_actionPerformed_title=將 CLR 指令碼轉換為 LiveHeader
 CopyGenericContextAction=複製資訊
 CopyGenericContextAction_tt=複製資訊：%s1

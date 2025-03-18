@@ -293,7 +293,6 @@ ContextMenuFactory_createPopup_speed=Όριο ταχύτητας Λήψεων
 ContextMenuFactory_createPopup_url=Εμφάνιση διεύθυνσης λήψης
 ConvertCLRAction_actionPerformed_finished_msg=Παρακαλούμε αντιγράψτε & επικολλήστε το αρχείο σας στην Ενότητα LiveHeader Επανασύνδεσης του JDownloader.
 ConvertCLRAction_actionPerformed_finished_title=Εντάξει - %s1!
-ConvertCLRAction_actionPerformed_msg=Παρακαλούμε εισαγάγετε το αρχείο επανασύνδεσης Cryptload CLR...
 ConvertCLRAction_actionPerformed_title=Μετατροπή αρχείου CLR σε LiveHeader
 CopyGenericContextAction=Αντιγραφή Πληροφοριών
 CopyGenericContextAction_tt=Αντιγραφή Πληροφοριών: %s1

@@ -274,7 +274,6 @@ ContextMenuFactory_createPopup_speed=다우로드 속도 제한
 ContextMenuFactory_createPopup_url=다운로드 URL을 표시
 ConvertCLRAction_actionPerformed_finished_msg=JDownloader LiveHeader다시 연결 영역에 스크립트를 복사하여 붙여주십시오
 ConvertCLRAction_actionPerformed_finished_title=완료 - %s1!
-ConvertCLRAction_actionPerformed_msg=Cryptload CLR 다시 연결 스크립트를 입력하십시오...
 ConvertCLRAction_actionPerformed_title=CLR스크립트를 LiveHeader로 변환
 CopyGenericContextAction=정보를 복사
 CopyGenericContextAction_tt=정보를 복사: %s1

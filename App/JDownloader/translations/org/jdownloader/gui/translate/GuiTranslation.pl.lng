@@ -283,7 +283,6 @@ ContextMenuFactory_createPopup_speed=Ograniczenie prędkości pobierania
 ContextMenuFactory_createPopup_url=Pokaż adresy pobieranych plików
 ConvertCLRAction_actionPerformed_finished_msg=Skopiuj i Wklej swój skrypt do sekcji Liveheader JDownloadera
 ConvertCLRAction_actionPerformed_finished_title=Zrobione - %s1!
-ConvertCLRAction_actionPerformed_msg=Proszę wprowadzić skrypt Ponownego Połączenia w wersji Cryptoload CLR
 ConvertCLRAction_actionPerformed_title=Konwertuj skrypt typu CLR do skryptu LiveHeader
 CopyGenericContextAction=Informacja o Kopiowaniu
 CopyGenericContextAction_tt=Informacja o Kopiowaniu: %s1

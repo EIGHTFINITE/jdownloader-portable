@@ -304,7 +304,6 @@ ContextMenuFactory_createPopup_speed=Limite velocità download
 ContextMenuFactory_createPopup_url=Visualizza URL download
 ConvertCLRAction_actionPerformed_finished_msg=Copia e incolla lo script nella sezione JDownloader Liveheader.
 ConvertCLRAction_actionPerformed_finished_title=Fatto - %s1!
-ConvertCLRAction_actionPerformed_msg=Inserisci lo script di riconnessione Cryptload CLR...
 ConvertCLRAction_actionPerformed_title=Converti script CLR in LiveHeader
 CopyGenericContextAction=Copia informazioni
 CopyGenericContextAction_tt=Copia informazioni: %s1

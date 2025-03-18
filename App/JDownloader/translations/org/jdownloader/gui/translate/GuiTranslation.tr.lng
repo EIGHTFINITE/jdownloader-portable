@@ -306,7 +306,6 @@ ContextMenuFactory_createPopup_speed=İndirme Hız Sınırı
 ContextMenuFactory_createPopup_url=İndirme URL'lerini Göster
 ConvertCLRAction_actionPerformed_finished_msg=Lütfen betiğinizi JDownloader Liveheader Yeniden Bağlanma Bölümüne kopyalayın ve yapıştırın.
 ConvertCLRAction_actionPerformed_finished_title=Bitti - %s1!
-ConvertCLRAction_actionPerformed_msg=Lütfen Cryptload CLR Yeniden Bağlanma Betiğini girin...
 ConvertCLRAction_actionPerformed_title=CLR Betiğini Liveheader betiğine dönüştür
 CopyGenericContextAction=Bilgiyi Kopyala
 CopyGenericContextAction_tt=Bilgiyi Kopyala: %s1

@@ -304,7 +304,6 @@ ContextMenuFactory_createPopup_speed=Omezení rychlosti stahování
 ContextMenuFactory_createPopup_url=Ukázat stahované odkazy
 ConvertCLRAction_actionPerformed_finished_msg=Zkopírujte a vložte svůj skript do sekce Liveheader znovupřipojení JDownloaderu.
 ConvertCLRAction_actionPerformed_finished_title=Hotovo - %s1!
-ConvertCLRAction_actionPerformed_msg=Zadejte skript znovupřipojení Cryptload CLR...
 ConvertCLRAction_actionPerformed_title=Převést skript CLR na LiveHeader
 CopyGenericContextAction=Kopírovat informace
 CopyGenericContextAction_tt=Kopírovat informace: %s1

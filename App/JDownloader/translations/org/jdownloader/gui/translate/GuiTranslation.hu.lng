@@ -307,7 +307,6 @@ ContextMenuFactory_createPopup_speed=Letöltési sebességhatár
 ContextMenuFactory_createPopup_url=Letöltési Webcim(ek) mutatása
 ConvertCLRAction_actionPerformed_finished_msg=Másolja és illessze be a parancsfájlt, a JDownloader élő fejlécének újracsatlakozás szakaszába.
 ConvertCLRAction_actionPerformed_finished_title=Kész - %s1!
-ConvertCLRAction_actionPerformed_msg=Kérjük adja meg, a Cryptload CLR újracsatlakoztatási parancsfájlt...
 ConvertCLRAction_actionPerformed_title=CLR parancsfájl átalakítása az élő fejlécbe
 CopyGenericContextAction=Másolási információk
 CopyGenericContextAction_tt=Másolási információ: %s1

@@ -302,7 +302,6 @@ ContextMenuFactory_createPopup_speed=Ograničenje brzine preuzimanja
 ContextMenuFactory_createPopup_url=Prikaži adresu linka preuzimanja
 ConvertCLRAction_actionPerformed_finished_msg=Kopirajte i zalijepite Vašu skriptu u JDownloader Liveheader sekciju rekonekcije.
 ConvertCLRAction_actionPerformed_finished_title=Završeno - %s1
-ConvertCLRAction_actionPerformed_msg=Molimo unesite Cryptload CLR skriptu rekonekcije...
 ConvertCLRAction_actionPerformed_title=Pretvorite CLR skriptu u LiveHeader
 CopyGenericContextAction=Kopiranje informacije
 CopyGenericContextAction_tt=Kopiranje informacije: %s1

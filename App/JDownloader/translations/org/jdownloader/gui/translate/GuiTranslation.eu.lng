@@ -216,7 +216,6 @@ ContextMenuFactory_createPopup_speed=Deskarga abiadura muga
 ContextMenuFactory_createPopup_url=Erakutsi deskarga URLak
 ConvertCLRAction_actionPerformed_finished_msg=Mesedez kopiatu eta itsatsi zure scripta JDownloader-en LiveHeader birkonexio atalean.
 ConvertCLRAction_actionPerformed_finished_title=Egin da - %s1
-ConvertCLRAction_actionPerformed_msg=Mesedez sartu CLR Cryptload-a brikonexio script-erako . ..
 ConvertCLRAction_actionPerformed_title=CLR Scripta LiveHeader bihurtu
 CopyGenericContextAction=Informazioa kopiatu
 CopyGenericContextAction_tt=Informazioa kopiatu: %s1

@@ -303,7 +303,6 @@ ContextMenuFactory_createPopup_speed=Nerladdningshastighetsbegränsning
 ContextMenuFactory_createPopup_url=Visa nerladdnings URL
 ConvertCLRAction_actionPerformed_finished_msg=Kopiera och kistra in ditt skript till JDownloader Liveheader återuppkopplingssektion.
 ConvertCLRAction_actionPerformed_finished_title=Klart - %s1
-ConvertCLRAction_actionPerformed_msg=Ange Cryptload CRL Återuppkopplingssskript
 ConvertCLRAction_actionPerformed_title=Konvertera CLR Skript till LiveHeader
 CopyGenericContextAction=Kopiera information
 CopyGenericContextAction_tt=Kopiera information: %s1

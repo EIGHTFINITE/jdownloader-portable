@@ -312,7 +312,6 @@ ContextMenuFactory_createPopup_speed=下载速度限制
 ContextMenuFactory_createPopup_url=显示下载 URLs
 ConvertCLRAction_actionPerformed_finished_msg=请复制并粘贴您的脚本到 JDownloader Liveheader 重连部分。
 ConvertCLRAction_actionPerformed_finished_title=完成 - %s1!
-ConvertCLRAction_actionPerformed_msg=请输入 Cryptload CLR 重连脚本…
 ConvertCLRAction_actionPerformed_title=转换 CLR 脚本为 LiveHeader
 CopyGenericContextAction=复制信息
 CopyGenericContextAction_tt=复制信息: %s1

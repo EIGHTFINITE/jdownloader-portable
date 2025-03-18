@@ -301,7 +301,6 @@ ContextMenuFactory_createPopup_speed=ダウロード速度制限
 ContextMenuFactory_createPopup_url=ダウンロードURLを表示
 ConvertCLRAction_actionPerformed_finished_msg=JDownloader LiveHeader再接続領域へスクリプトをコピーして貼り付けて下さい
 ConvertCLRAction_actionPerformed_finished_title=完了 - %s1!
-ConvertCLRAction_actionPerformed_msg=Cryptload CLR 再接続スクリプトを入力して下さい...
 ConvertCLRAction_actionPerformed_title=CLRスクリプトをLiveHeaderに変換
 CopyGenericContextAction=情報をコピー
 CopyGenericContextAction_tt=情報をコピー: %s1

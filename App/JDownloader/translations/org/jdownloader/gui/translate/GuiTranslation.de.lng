@@ -309,7 +309,6 @@ ContextMenuFactory_createPopup_speed=Download-Geschwindigkeitslimit
 ContextMenuFactory_createPopup_url=Downloadadressen zeigen
 ConvertCLRAction_actionPerformed_finished_msg=Bitte kopiere Dein Skript und füge es als LiveHeader-Skript unter Reconnect-Methode in die Reconnect-Einstellungen ein.
 ConvertCLRAction_actionPerformed_finished_title=Fertig - %s1!
-ConvertCLRAction_actionPerformed_msg=Bitte das Cryptload *.clr - Reconnect-Skript einfügen...
 ConvertCLRAction_actionPerformed_title=CLR-Skript zu LiveHeader-Skript konvertieren
 CopyGenericContextAction=Information kopieren
 CopyGenericContextAction_tt=Information kopieren: %s1
