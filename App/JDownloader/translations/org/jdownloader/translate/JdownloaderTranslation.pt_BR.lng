@@ -277,7 +277,6 @@ basics_no=Não
 basics_yes=Sim
 configheader_enabled=Habilitado
 controller_packages_defaultname=Diversos
-convert_CLR_Reconnect_to_jdownloader=Converter script de reconexão Cryptload (*.clr) para o LiveHeader do JDownloader
 decrypter_contentoffline=Conteúdo offline
 decrypter_empty_folder=Pasta vazia
 decrypter_empty_folder_description=Esta pasta está vazia.
