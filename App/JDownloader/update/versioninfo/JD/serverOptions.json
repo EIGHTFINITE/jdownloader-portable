@@ -11,6 +11,7 @@
  "translations/org/jdownloader/extensions/chat"           : "{\r\n\"parentIDList\":[\"chat\"]\r\n}",
  "libs/swt/windows"                                       : "{\r\n\"mac\" : \"FALSE\",\r\n\"linux\":\"FALSE\",\r\n\"bsd\":\"FALSE\"\r\n}",
  "tools/Windows/rtmpdump/NativeProcessx64.dll"            : "{\r\n\"jvm32Bit\":\"FALSE\",\r\n\"jvm64Bit\":\"TRUE\"\r\n}",
+ "libs/sevenzipjbindingRiscv.jar"                         : "{\r\n\"parentIDList\":[\"cpu_riscv\"]\r\n}",
  "libs/laf/syntheticaBlueSteel.jar"                       : "{\r\n\"parentIDList\":[\"synthetica-themes\"]\r\n}",
  "libs/laf/syntheticaBlueMoon.jar"                        : "{\r\n\"parentIDList\":[\"synthetica-themes\"]\r\n}",
  "libs/sevenzipjbindingLinuxPPCVersion.jar"               : "{\r\n\"windows\":\"FALSE\",\r\n\"mac\":\"FALSE\",\r\n\"bsd\":\"FALSE\",\r\n\"linux\":\"TRUE\",\r\n\"arch\":\"PPC\"\r\n}",
