@@ -291,7 +291,6 @@ decrypter_unavailable_geo=不可用于当前地理位置
 decrypter_unavailable_geo_description=当前地理位置不可用。更改你的IP 以便能够爬取这个内容。
 decrypter_unavailable_ip=不适用于当前 IP
 decrypter_unavailable_ip_description=你的当前 IP 地址上的限制使得不可能爬取本项。 更改你的 IP 地址或稍后再次尝试。
-decrypter_unavailable_unsupported_captcha_cloudflare_turnstile=不支持验证码'Cloudflare Turnstile'。
 decrypter_unavailable_unsupported_livestream=不支持直播流。
 decrypter_unknownerror=未知错误
 decrypter_wrongcaptcha=错误验证码

@@ -290,7 +290,6 @@ decrypter_unavailable_geo=Não disponível para a geolocalização atual
 decrypter_unavailable_geo_description=Não disponível para geolocalização atual. Altere seu IP para poder capturar este conteúdo.
 decrypter_unavailable_ip=Não disponível para o IP atual
 decrypter_unavailable_ip_description=Um limite em seu endereço IP atual impossibilita a captura deste item. Altere seu endereço IP ou tente novamente mais tarde.
-decrypter_unavailable_unsupported_captcha_cloudflare_turnstile=O captcha 'Cloudflare Turnstile' não é suportado.
 decrypter_unavailable_unsupported_livestream=Transmisões ao vivo não são suportadas.
 decrypter_unknownerror=Erro desconhecido
 decrypter_wrongcaptcha=Código captcha errado

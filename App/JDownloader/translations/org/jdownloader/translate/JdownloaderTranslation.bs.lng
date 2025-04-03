@@ -290,7 +290,6 @@ decrypter_unavailable_geo=Nije dostupno za trenutnu geolokaciju
 decrypter_unavailable_geo_description=Nije dostupno za trenutnu geolokaciju. Zamijenite IP da bi bili u mogućnosti da pretražujete ovaj sadržaj.
 decrypter_unavailable_ip=Nije dostupno za trenutni IP
 decrypter_unavailable_ip_description=Limit na vašoj trenutnoj IP adresi onemogućava pretraživanje ove stavke. Zamijneite IP adresu ili probajte kasnije.
-decrypter_unavailable_unsupported_captcha_cloudflare_turnstile=Captcha 'Cloudflare Turntile' nije podržana.
 decrypter_unavailable_unsupported_livestream=Strema uživo nije podržan.
 decrypter_unknownerror=Nepoznata greška
 decrypter_wrongcaptcha=Pogrešan Captcha
