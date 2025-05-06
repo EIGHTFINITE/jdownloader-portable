@@ -1406,6 +1406,7 @@ YoutubeDashConfigPanel_YoutubeDashConfigPanel_ChannelCrawlerPreferredSortMode=Mo
 YoutubeDashConfigPanel_YoutubeDashConfigPanel_ChannelPlaylistCrawlerPackagingMode=Modo de grupo de captura de canal/lista de reprodução
 YoutubeDashConfigPanel_YoutubeDashConfigPanel_PlaylistAndProfileCrawlerMaxItemsLimit=Limite máximo de itens da captura de perfil/lista de reprodução [-1 = sem limite, 0 = desabilitar captura]
 YoutubeDashConfigPanel_YoutubeDashConfigPanel_PlaylistItemsIncludePlaylistPositionAtBeginningOfFilenames=Itens da playlist: Incluir posição no início do nome do arquivo:
+YoutubeDashConfigPanel_YoutubeDashConfigPanel_PlaylistVideosDuplicateDetectionMode=Itens da playlist: Modo de detecção de duplicados
 YoutubeDashConfigPanel_YoutubeDashConfigPanel_ProcessPlaylistItemsInReverseOrder=Processar itens da lista de reprodução capturados na ordem inversa (aplica-se apenas se nenhum limite de captura for definido ou se a lista de reprodução contiver menos itens do que o limite de captura definido!)?
 YoutubeDashConfigPanel_YoutubeDashConfigPanel_ProfileCrawlMode=Modo de captura do perfil
 YoutubeDashConfigPanel_YoutubeDashConfigPanel_best_explained=O YouTube oferece streams com resolução de até 4320p. Se você deseja baixar estes streams, desmarque a caixa abaixo.
