@@ -95,18 +95,42 @@
       "minJRE":"JVM_1_5",
       "name":"Bouncy Castle JSSE provider and TLS/DTLS API",
       "version":"1.80"
+    },
+    {
+      "changes":"1.81\t: Defects Fixed\r\n - A potention NullPointerException in the KEM KDF KemUtil class has been removed.\r\n - Overlapping input/output buffers in doFinal could result in data corruption. This has been fixed.\r\n - Fixed Grain-128AEAD decryption incorrectly handle MAC verification.\r\n - Add configurable header validation to prevent malicious header injection in PGP cleartext signed messages; Fix signature packet encoding issues in PGPSignature.join() and embedded signatures while phasing out legacy format.\r\n - Fixed ParallelHash initialization stall when using block size B=0.\r\n - The PRF from the PBKDF2 function was been lost when PBMAC1 was initialized from protectionAlgorithm. This has been fixed.\r\n - The lowlevel DigestFactory was cloning MD5 when being asked to clone SHA1. This has been fixed.\r\n \r\nAdditional Features and Functionality\r\n - XWing implementation updated to draft-connolly-cfrg-xwing-kem/07/\r\n - Further support has been added for generation and use of PGP V6 keys\r\n - Additional validation has been added for armored headers in Cleartext Signed Messages.- - The PQC signature algorithm proposal Mayo has been added to the low-level API and the BCPQC provider.\r\n - The PQC signature algorithm proposal Snova has been added to the low-level API and the BCPQC provider.\r\n - Support for ChaCha20-Poly1305 has been added to the CMS/SMIME APIs.\r\n - The Falcon implementation has been updated to the latest draft.\r\n - Support has been added for generating keys which encode as seed-only and expanded-key-only for ML-KEM and ML-DSA private keys.\r\n - Private key encoding of ML-DSA and ML-KEM private keys now follows the latest IETF draft.\r\n - The Ascon family of algorithms has been updated to the initial draft of SP 800-232. Some additional optimisation work has been done.\r\n - Support for ML-DSA's external-mu calculation and signing has been added to the BC provider.\r\n - CMS now supports ML-DSA for SignedData generation.\r\n - Introduce high-level OpenPGP API for message creation/consumption and certificate evaluation.\r\n - Added JDK21 KEM API implementation for HQC algorithm.\r\n - BCJSSE: Strip trailing dot from hostname for SNI, endpointID checks.\r\n - BCJSSE: Draft support for ML-KEM updated (draft-connolly-tls-mlkem-key-agreement-05).\r\n - BCJSSE: Draft support for hybrid ECDHE-MLKEM (draft-ietf-tls-ecdhe-mlkem-00).\r\n - BCJSSE: Optionally prefer TLS 1.3 server's supported_groups order (BCSSLParameters.useNamedGroupsOrder).",
+      "date":"2025-06-24T15:20:02.371+02:00",
+      "dependencies":[{
+        "groupId":"org.bouncycastle",
+        "artifactId":"bcutil-jdk15to18",
+        "version":"[1.81,1.82)",
+        "type":"jar"
+      }],
+      "description":"The Bouncy Castle Java APIs for the TLS, including a JSSE provider. The APIs are designed primarily to be used in conjunction with the BC Java provider but may also be used with other providers providing cryptographic services. This jar is designed to best work with Java 1.5 to Java 1.8.",
+      "files":null,
+      "hashes":{
+        "../code-ressourcen/bctls-jdk15on-sources.jar":"9de19df1010d6bd74c0db81ec7e0900b3a0059a169328effaf137742446d333e",
+        "bctls-jdk15on.jar":"7521d0c407a8b185dbd8c93fc6362caeaee882cc7db6ca26f2f913a0b0fe2fe0"
+      },
+      "licenses":[{
+        "name":"Bouncy Castle Licence",
+        "url":"https://www.bouncycastle.org/licence.html",
+        "distribution":"repo"
+      }],
+      "minJRE":"JVM_1_5",
+      "name":"Bouncy Castle TLS/JSSE APIs",
+      "version":"1.81"
     }
   ],
   "installed":{
-    "changes":"1.81\t: Defects Fixed\r\n - A potention NullPointerException in the KEM KDF KemUtil class has been removed.\r\n - Overlapping input/output buffers in doFinal could result in data corruption. This has been fixed.\r\n - Fixed Grain-128AEAD decryption incorrectly handle MAC verification.\r\n - Add configurable header validation to prevent malicious header injection in PGP cleartext signed messages; Fix signature packet encoding issues in PGPSignature.join() and embedded signatures while phasing out legacy format.\r\n - Fixed ParallelHash initialization stall when using block size B=0.\r\n - The PRF from the PBKDF2 function was been lost when PBMAC1 was initialized from protectionAlgorithm. This has been fixed.\r\n - The lowlevel DigestFactory was cloning MD5 when being asked to clone SHA1. This has been fixed.\r\n \r\nAdditional Features and Functionality\r\n - XWing implementation updated to draft-connolly-cfrg-xwing-kem/07/\r\n - Further support has been added for generation and use of PGP V6 keys\r\n - Additional validation has been added for armored headers in Cleartext Signed Messages.- - The PQC signature algorithm proposal Mayo has been added to the low-level API and the BCPQC provider.\r\n - The PQC signature algorithm proposal Snova has been added to the low-level API and the BCPQC provider.\r\n - Support for ChaCha20-Poly1305 has been added to the CMS/SMIME APIs.\r\n - The Falcon implementation has been updated to the latest draft.\r\n - Support has been added for generating keys which encode as seed-only and expanded-key-only for ML-KEM and ML-DSA private keys.\r\n - Private key encoding of ML-DSA and ML-KEM private keys now follows the latest IETF draft.\r\n - The Ascon family of algorithms has been updated to the initial draft of SP 800-232. Some additional optimisation work has been done.\r\n - Support for ML-DSA's external-mu calculation and signing has been added to the BC provider.\r\n - CMS now supports ML-DSA for SignedData generation.\r\n - Introduce high-level OpenPGP API for message creation/consumption and certificate evaluation.\r\n - Added JDK21 KEM API implementation for HQC algorithm.\r\n - BCJSSE: Strip trailing dot from hostname for SNI, endpointID checks.\r\n - BCJSSE: Draft support for ML-KEM updated (draft-connolly-tls-mlkem-key-agreement-05).\r\n - BCJSSE: Draft support for hybrid ECDHE-MLKEM (draft-ietf-tls-ecdhe-mlkem-00).\r\n - BCJSSE: Optionally prefer TLS 1.3 server's supported_groups order (BCSSLParameters.useNamedGroupsOrder).",
-    "date":"2025-06-24T15:20:02.371+02:00",
+    "changes":"1.82\t: Defects Fixed\r\n - SNOVA and MAYO are now correctly added to the JCA provider module-info file.\r\n - TLS: Avoid nonce reuse error in JCE AEAD workaround for pre-Java7.\r\n - BCJSSE: Session binding map is now shared across all stages of the session lifecycle (SunJSSE compatibility).\r\n - The CMCEPrivateKeyParameters#reconstructPublicKey method was returning an empty byte array. It now returns an encoding of the public key.\r\n - CBZip2InputStream no longer auto-closes at end-of-contents.\r\n - The BC CertPath implementation was eliminating certificates on the bases of the Key-ID. This is not in accordance with RFC 4158 and has been fixed.\r\n - Support for the previous set of libOQS Falcon OIDs has been restored.\r\n - The BC CipherInputStream could throw an exception if asked to handle an AEAD stream consisting of the MAC only. This has been fixed.\r\n - Some KeyAgreement classes were missing in the Java 11 class hierarchy. This has been fixed.\r\n - A typo in a constant name in the HPKE class has been fixed and the old constant deprecated.\r\n - Fuzzing analysis has been done on the OpenPGP API and additional code has been added to prevent escaping exceptions.\r\n \r\nAdditional Features and Functionality\r\n - SHA3Digest, CSHAKE, TupleHash, KMAC now provide support for Memoable and EncodableService.\r\n - BCJSSE: Added support for integrity-only cipher suites in TLS 1.3 per RFC 9150.\r\n - BCJSSE: Added support for system properties \"jdk.tls.client.maxInboundCertificateChainLength\" and \"jdk.tls.server.maxInboundCertificateChainLength\".\r\n - BCJSSE: Added support for ML-DSA signature schemes in TLS 1.3 per draft-ietf-tls-mldsa-00.\r\n - The Composite post-quantum signatures implementation has been updated to the latest draft (07) draft-ietf-lamps-pq-composite-sigs.\r\n - \"_PREHASH\" implementations are now provided for all composite signatures to allow the hash of the date to be used instead of the actual data in signature calculation.\r\n - The gradle build can now be used to generate an Bill of Materials (BOM) file.\r\n - It is now possible to configure the SignerInfoVerifierBuilder used by the SignedMailValidator class.\r\n - The Ascon family of algorithms has been updated with the latest published changes.\r\n - Composite signature keys can now be constructed from the individual keys of the algorithms composing the composite.\r\n - PGPSecretKey, PGPSignatureGenerator now support version 6.\r\n - Further optimisation work has been done on ML-KEM public key validation.\r\n - Zeroization of passwords in the JCA PKCS12 key store has been improved.\r\n - The \"org.bouncycastle.drbg.effective_256bits_entropy\" property has been added for platforms where the entropy source is not producing 1 full bit of entropy per bit and additional bits are required (default value 282).\r\n - Support has been added to the CMS content encryptors to allow a generated key to be passed in, rather than always having them generate their own.\r\n - OpenPGPKeyGenerator now allows for the use of empty UserIDs (version 4 compatibility).\r\n - The HQC KEM has been updated with the latest draft updates.\r\n \r\nAdditional Notes\r\n - The legacy post-quantum package has now been removed.",
+    "date":"2025-09-19T11:01:25.47+02:00",
     "dependencies":[{
       "groupId":"org.bouncycastle",
       "artifactId":"bcutil-jdk15to18",
-      "version":"[1.81,1.82)",
+      "version":"1.82",
       "type":"jar"
     }],
-    "description":"The Bouncy Castle Java APIs for the TLS, including a JSSE provider. The APIs are designed primarily to be used in conjunction with the BC Java provider but may also be used with other providers providing cryptographic services. This jar is designed to best work with Java 1.5 to Java 1.8.",
+    "description":"The  Bouncy Castle Java APIs for the TLS, including a JSSE provider (except in Java 4). The APIs are designed primarily to be used in conjunction with the BC Java provider but may also be used with other providers providing cryptographic services. This jar is designed to best work with Java 1.5 to Java 1.8.",
     "files":[
       "",
       "bctls-jdk15to18-javadoc.jar",
@@ -136,8 +160,8 @@
       "meta.json"
     ],
     "hashes":{
-      "../code-ressourcen/bctls-jdk15on-sources.jar":"9de19df1010d6bd74c0db81ec7e0900b3a0059a169328effaf137742446d333e",
-      "bctls-jdk15on.jar":"7521d0c407a8b185dbd8c93fc6362caeaee882cc7db6ca26f2f913a0b0fe2fe0"
+      "../code-ressourcen/bctls-jdk15on-sources.jar":"b02ac64cf7aec2376e7d4736496b8339f5a158b3f623b4ae1d5d77c220b03cde",
+      "bctls-jdk15on.jar":"0289ade81c12a74e4726e0f2961933004546ffd740c3a3ce821fbbbd2071e3f7"
     },
     "licenses":[{
       "name":"Bouncy Castle Licence",
@@ -146,7 +170,7 @@
     }],
     "minJRE":"JVM_1_5",
     "name":"Bouncy Castle TLS/JSSE APIs",
-    "version":"1.81"
+    "version":"1.82"
   },
   "minJRE":"1.6",
   "provider":"maven",
