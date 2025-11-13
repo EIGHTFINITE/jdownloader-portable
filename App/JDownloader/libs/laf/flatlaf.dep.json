@@ -68,11 +68,29 @@
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
       "version":"3.6"
+    },
+    {
+      "changes":"3.6.1\t: ## Change Log\r\n\r\n- Extras: Support JSVG 2.0.0. Minimum JSVG version is now 1.6.0. (issue #997)\r\n- FlatLaf window decorations (Windows 10/11 only): Improved diagonal window\r\n  resizing on top-left and top-right window corners. Top window resize area now\r\n  also covers iconify/maximize/close buttons. (issue #1015)\r\n- ToggleButton: Styling `selectedForeground` did not work if `foreground` is also styled. (issue #1017)\r\n- JideSplitButton: Fixed updating popup when switching theme. (issue #1000)\r\n- IntelliJ Themes: Fixed logging false errors when loading 3rd party `.theme.json` files. (issue #990)\r\n- Linux: Popups appeared in wrong position on multi-screen setup if primary\r\n  display is located below or right to secondary display. (see [NetBeans issue #8532](https://github.com/apache/netbeans/issues/8532))\r\n- macOS: Fixed popup flickering after theme change. (issue #1009)\r\n- macOS with JetBrains Runtime: Fixed sometimes empty popups. (issue #1019)\r\n",
+      "date":"2025-07-14T11:15:42.804+02:00",
+      "dependencies":null,
+      "description":"Flat Look and Feel",
+      "files":null,
+      "hashes":{
+        "flatlaf.jar":"687be33e1e3eface1681fd194732d16e008126a47b6116b4301e7070c918c4c9",
+        "../../code-ressourcen/flatlaf-sources.jar":"af79f24fc795b55c9e937f4ea15f844ee19f86c5078f79c00c6c6f7527935ba4"
+      },
+      "licenses":[{
+        "name":"The Apache License, Version 2.0",
+        "url":"https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }],
+      "minJRE":"JVM_1_8",
+      "name":"FlatLaf",
+      "version":"3.6.1"
     }
   ],
   "installed":{
-    "changes":"3.6.1\t: ## Change Log\r\n\r\n- Extras: Support JSVG 2.0.0. Minimum JSVG version is now 1.6.0. (issue #997)\r\n- FlatLaf window decorations (Windows 10/11 only): Improved diagonal window\r\n  resizing on top-left and top-right window corners. Top window resize area now\r\n  also covers iconify/maximize/close buttons. (issue #1015)\r\n- ToggleButton: Styling `selectedForeground` did not work if `foreground` is also styled. (issue #1017)\r\n- JideSplitButton: Fixed updating popup when switching theme. (issue #1000)\r\n- IntelliJ Themes: Fixed logging false errors when loading 3rd party `.theme.json` files. (issue #990)\r\n- Linux: Popups appeared in wrong position on multi-screen setup if primary\r\n  display is located below or right to secondary display. (see [NetBeans issue #8532](https://github.com/apache/netbeans/issues/8532))\r\n- macOS: Fixed popup flickering after theme change. (issue #1009)\r\n- macOS with JetBrains Runtime: Fixed sometimes empty popups. (issue #1019)\r\n",
-    "date":"2025-07-14T11:15:42.804+02:00",
+    "changes":"3.6.2\t: ## Change Log\r\n\r\n#### New features and improvements\r\n\r\n- If using `FlatLaf.registerCustomDefaultsSource( \"com.myapp.themes\" )` and\r\n  named Java modules, it is no longer necessary to add `opens com.myapp.themes;`\r\n  to `module-info.java`. (issue #1026)\r\n- Extras: Made animated theme change (class `FlatAnimatedLafChange`) smoother.\r\n\r\n#### Fixed bugs\r\n\r\n- Tree and List: Fixed painting of rounded drop backgrounds. (issue #1023)\r\n- Popup: Showing tooltip in inactive window brought that window to front (made\r\n  it active) and potentially hid the previously active window. (issue #1037)\r\n- Popup: No longer reuse popup windows for menus to avoid immediately closing\r\n  dialogs on ChromeOS. (issue #1029)\r\n- macOS: Fixed window \"flashing\" when switching from a light to a dark theme (or\r\n  vice versa). Especially when using animated theme changer (see [FlatLaf Extras](flatlaf-extras)).\r\n\r\n#### Incompatibilities\r\n\r\n- FlatLaf properties files are now loaded using the UTF-8 character encoding\r\n  instead of ISO 8859-1. In usual properties files you will not notice any\r\n  difference because they use only ASCII characters, but if you've put localized\r\n  (non-English) texts (e.g. German umlauts) into your properties files, you need\r\n  to convert them to UTF-8. Properties files created with the FlatLaf Theme\r\n  Editor already use UTF-8, including in older versions. (issue #1031)\r\n",
+    "date":"2025-10-13T12:53:16.838+02:00",
     "dependencies":null,
     "description":"Flat Look and Feel",
     "files":[
@@ -210,8 +228,8 @@
       "meta.json"
     ],
     "hashes":{
-      "flatlaf.jar":"687be33e1e3eface1681fd194732d16e008126a47b6116b4301e7070c918c4c9",
-      "../../code-ressourcen/flatlaf-sources.jar":"af79f24fc795b55c9e937f4ea15f844ee19f86c5078f79c00c6c6f7527935ba4"
+      "flatlaf.jar":"32c79dee6d51341a3f8603598415841b4461fe535de2c34bcc8ee40e91e72267",
+      "../../code-ressourcen/flatlaf-sources.jar":"09fdeb40e692c60faf91c9a7946e2a08de7fc254ca4306062e6ec7c5a8baf05c"
     },
     "licenses":[{
       "name":"The Apache License, Version 2.0",
@@ -219,7 +237,7 @@
     }],
     "minJRE":"JVM_1_8",
     "name":"FlatLaf",
-    "version":"3.6.1"
+    "version":"3.6.2"
   },
   "minJRE":"1.8",
   "provider":"maven",
