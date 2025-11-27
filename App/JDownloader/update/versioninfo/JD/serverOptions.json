@@ -77,6 +77,7 @@
  "libs/sevenzipjbindingLinux.jar"                         : "{\r\n\"windows\":\"FALSE\",\r\n\"mac\":\"FALSE\",\r\n\"bsd\":\"FALSE\",\r\n\"linux\":\"TRUE\",\r\n\"arch\":\"X86\"\r\n}",
  "extensions/JDShutdown.jar"                              : "{\r\n\"parentIDList\":[\"shutdown\"]\r\n}",
  "tools/Windows"                                          : "{\r\n\"mac\" : \"FALSE\",\r\n\"linux\":\"FALSE\",\r\n\"windows\" : \"TRUE\"\r\n}",
+ "tools/Windows/ffmpeg/arm64"                             : "{\r\n\"os64Bit\":\"TRUE\",\r\n\"os32Bit\":\"FALSE\",\r\n\"arch\":\"ARM\"\r\n}",
  "libs/laf/syntheticaBlueLight.jar"                       : "{\r\n\"parentIDList\":[\"synthetica-themes\"]\r\n}",
  "extensions/Scheduler.jar"                               : "{\r\n\"parentIDList\":[\"scheduler\"]\r\n}",
  "libs/swt/linux"                                         : "{\r\n\"mac\" : \"FALSE\",\r\n\"windows\":\"FALSE\",\r\n\"bsd\":\"FALSE\"\r\n}",
