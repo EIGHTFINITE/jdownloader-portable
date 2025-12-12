@@ -101,6 +101,7 @@
     }],
     "minJRE":"JVM_1_6",
     "name":"SVNKit Library",
+    "signatures":{"svnkit.jar":"-----BEGIN PGP SIGNATURE-----\nVersion: BCPG v1.46\n\niQEcBAABAgAGBQJVZG0BAAoJEKuq5U835vjhEOUIALGxfs0ldId/0HCu/Nodm1z/\nY71K+EQGwdCrJHUg0hezXEXsmDkCGenU5U3PvM446/aKYCNOeFAmhNj3i+6yvB2R\nexsiZXe59d6G0UqrwKbJWTcudOgEofJXyp2cy/UuHjnlYn7r6zn5lpM05CQT+IaP\n7YEOXXzgRdPOGJcI1ftOpywOpWWTdI0pFjTdSWdXZOv+rbPOYMwhg4JBpJssmcRb\n7DL6/2oTttodIU6KIWb/WoDUBO0+lLKXCD3GBPRCAAnZwl62iPpoAttRS3YDfa3M\nNmQKFrk/hu8yRkhJVk8+lUXYPZPiVDvB2YY07rHofOyjtT6+dk1DwTa0R/J7/mg=\n=J4sT\n-----END PGP SIGNATURE-----\n"},
     "version":"1.8.10"
   },
   "minJRE":"1.6",

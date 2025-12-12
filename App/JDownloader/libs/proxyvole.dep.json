@@ -13,6 +13,7 @@
     "licenses":["Apache License, Version 2.0"],
     "minJRE":"JVM_1_6",
     "name":"ProxyVole",
+    "signatures":{},
     "version":"1.0.5-appwork.0.1"
   },
   "minJRE":"1.6",

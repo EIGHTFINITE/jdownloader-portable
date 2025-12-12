@@ -59,6 +59,7 @@
     ],
     "minJRE":"JVM_1_6",
     "name":"Java Native Access",
+    "signatures":{"jna.jar":"-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+nkp+DrUTEWQ9sxoFcccCk4Ljt0FAmPCnkoACgkQFcccCk4L\njt02aA//YW9bGMs+c1vcFpnquNXNSNIZYD+zTUgc6t8YRcoPBPbiacNH6PIJa9LJ\n4XXE/fyyUaHFlC4BFq/HdNfjtxwz5zzzcSncpDNlVe1XsUGOjxQFTtDWtOd0ygGR\nxsYOIqk4XUbs6U5vtUWl5chSZC3SR0ei9+ETU3cllehqZ8lsQRCkTnSsuwi5Wl/e\n4DVk2O0ydCc5aaUGJYvOLSNsNMvWjI6EoQbjZrQ3FmP/KdO8AtNN5YoKKe0YGTsj\niq8e3pps5/kowLLJwOxM6fCIurfnsFQ3LFfZp9vCgwGWHcD2Y3QoCghECtgLGac+\nabYVY4X2jvvNImg6ZPojOKNTK2ESst6wsHhrqFnFq+bTxu6/CnsbBLNn2+tgDR3S\nbWXEj0oW38H3RgZ/ATAUA2CCIr7JMpHLbgzqXmH8ZUDvto18TER4a6Mbdk+4LsRS\nVKYUoy0OVS6OMFYj2aD4f+7JA6QysCKxaXOz+cPDjBd+Ce5k6WdnXyqt+gP31mjW\n/oO2bPspw4MHeolwGuRxu5BytKIFIqwWWEtVElc6HSq495qDNTQIiPstG7B5JXxN\ntQbm6vk6Tai8e59FX+TjcRRg8i+mTGHfTqAgAwgxstUEqef4JfY0XhGIMDm4od5W\njeRDZdWcrAoDSXUGbmdQZxbdhBkpt4G2LQx6GKrYb+5LBPwaxw0=\n=oIay\n-----END PGP SIGNATURE-----\n"},
     "version":"5.13.0"
   },
   "minJRE":"1.6",

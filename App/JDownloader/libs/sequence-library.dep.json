@@ -48,6 +48,7 @@
     }],
     "minJRE":"JVM_1_4",
     "name":"Sequence Library",
+    "signatures":{"sequence-library.jar":"-----BEGIN PGP SIGNATURE-----\r\nVersion: BCPG v1.46\r\n\r\niQEcBAABAgAGBQJPqW1pAAoJEKuq5U835vjhWv4H/jW+qvXNWYVLXFEPUZic0JpI\r\nEeIG3TBqqR94Ub3AzaG4z+7Qd9Tz7GE7vhU6lXUfe4ZvWnA/7aRIyOZLTLRVNWgS\r\nJ64gzdTV66ABCHPE9DTs4ruWdJE1vb7VTwnNN3V8m1pec1hmQxSRPmSMqCtIcmWc\r\nuicr72iiptq7WeCbHbvhrQapgvGW4zYA/9b4PquHEgNwxlv4Ux6jKgVJEEqTNSa7\r\nnftSwEWl+h0FbXxhiXi8eg+TiuLvG/SddiSJhUwQ6jX+gmAkh6a3LMhJy3aGm4Xx\r\n057+hZORR2MHIUr1pLXWyCcTVRh9oYczwPPQbjflD3hk8ZmPf5PZo8WN4uZ1CY8=\r\n=QEQV\r\n-----END PGP SIGNATURE-----\r\n"},
     "version":"1.0.2"
   },
   "minJRE":"1.6",

@@ -51,6 +51,7 @@
     "licenses":["Licensed by AppWork GmbH for all AppWork products."],
     "minJRE":"JVM_1_6",
     "name":"Synthetica",
+    "signatures":{},
     "version":"2.34.0"
   },
   "minJRE":"1.6",

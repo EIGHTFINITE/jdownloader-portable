@@ -66,6 +66,7 @@
     }],
     "minJRE":"JVM_1_7",
     "name":"Zip4j",
+    "signatures":{"zip4j.jar":"-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCAAdFiEENvTGgPw+UOFMkPy/oLR179lEhRMFAlzeoLIACgkQoLR179lE\nhRMeWQf+IyS8n3xV9xoMxrlbWMU5bOFAMlxC1YndQH90G28RBhMUmp8q190X2Npf\nn4TFvCpytycRGgD232O8ulZCYC3Bqz/NGRV5kFIryOaBBeOSxNwHtBWywGGhM+w9\n6sDnSMM+RzsjaybxYeukDuvZFjKQId2yBMnxtmsjWT6D1hH7y37cSfzrfks3CYbW\n+z/SZCo4rwwEkVhHzK+OVYvf3YfKVdcfegYG3uxUmxXhpHyDG1egaf0egQ/M5H7j\n0zpQlXLzCtz+of9+UqVf8aOizNv3qeyhA7YNQpHwI4nCVYzUWiKTQteOo5hfnxIO\nLtZuIijRuOAaefK0zIdMqOjUGkDNPg==\n=SYKx\n-----END PGP SIGNATURE-----\n"},
     "version":"1.3.3"
   },
   "minJRE":"1.7",

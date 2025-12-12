@@ -53,6 +53,7 @@
     "licenses":["BSD"],
     "minJRE":"JVM_1_4",
     "name":"Antlr 3.4 Runtime",
+    "signatures":{"antlr-runtime.jar":"-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1.4.11 (GNU/Linux)\n\niQEcBAABAgAGBQJOJbJ8AAoJEG653k1+AbHh1LYIAJXYjwXCjd+EhtNm5wAZMHdv\ngyzXI1NwTZg5D7t0Fi1LMSYLyNz1r33OLHXyVeqZ7pSMua0TE2z8bfVbw4MYKGK0\nChLbq5F72n5yvLDYbsG6HbQxAG8QMzq1ddt0iKdEVCQ8WjhpgihhX+9AcZq+OO4Z\n9v82rWJojBpqW87t2UeXLC52LrEJZCAi6wYUL9JyZa6o9PZMGG/qypyNVGaRu/al\nQkI8wxi2CiKynIa/2U9n3eVXztFb2M1UgRRssHA2gwPDnAIub6168dE2rXKDqBHg\nN3elivoOKpSiLisoStbv5zstTbVghj7M4qFzafiw2wusX/VnTRHTgRiXnA7b/Zg=\n=jSJd\n-----END PGP SIGNATURE-----\n"},
     "version":"3.4"
   },
   "minJRE":"1.6",

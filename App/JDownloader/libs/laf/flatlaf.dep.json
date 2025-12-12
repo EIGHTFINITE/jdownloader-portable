@@ -16,6 +16,7 @@
       }],
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
+      "signatures":null,
       "version":"3.5.2"
     },
     {
@@ -31,6 +32,7 @@
       }],
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
+      "signatures":null,
       "version":"3.5.3"
     },
     {
@@ -49,6 +51,7 @@
       }],
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
+      "signatures":null,
       "version":"3.5.4"
     },
     {
@@ -67,6 +70,7 @@
       }],
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
+      "signatures":null,
       "version":"3.6"
     },
     {
@@ -85,12 +89,32 @@
       }],
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
+      "signatures":null,
       "version":"3.6.1"
+    },
+    {
+      "changes":"3.6.2\t: ## Change Log\r\n\r\n#### New features and improvements\r\n\r\n- If using `FlatLaf.registerCustomDefaultsSource( \"com.myapp.themes\" )` and\r\n  named Java modules, it is no longer necessary to add `opens com.myapp.themes;`\r\n  to `module-info.java`. (issue #1026)\r\n- Extras: Made animated theme change (class `FlatAnimatedLafChange`) smoother.\r\n\r\n#### Fixed bugs\r\n\r\n- Tree and List: Fixed painting of rounded drop backgrounds. (issue #1023)\r\n- Popup: Showing tooltip in inactive window brought that window to front (made\r\n  it active) and potentially hid the previously active window. (issue #1037)\r\n- Popup: No longer reuse popup windows for menus to avoid immediately closing\r\n  dialogs on ChromeOS. (issue #1029)\r\n- macOS: Fixed window \"flashing\" when switching from a light to a dark theme (or\r\n  vice versa). Especially when using animated theme changer (see [FlatLaf Extras](flatlaf-extras)).\r\n\r\n#### Incompatibilities\r\n\r\n- FlatLaf properties files are now loaded using the UTF-8 character encoding\r\n  instead of ISO 8859-1. In usual properties files you will not notice any\r\n  difference because they use only ASCII characters, but if you've put localized\r\n  (non-English) texts (e.g. German umlauts) into your properties files, you need\r\n  to convert them to UTF-8. Properties files created with the FlatLaf Theme\r\n  Editor already use UTF-8, including in older versions. (issue #1031)\r\n",
+      "date":"2025-10-13T12:53:16.838+02:00",
+      "dependencies":null,
+      "description":"Flat Look and Feel",
+      "files":null,
+      "hashes":{
+        "flatlaf.jar":"32c79dee6d51341a3f8603598415841b4461fe535de2c34bcc8ee40e91e72267",
+        "../../code-ressourcen/flatlaf-sources.jar":"09fdeb40e692c60faf91c9a7946e2a08de7fc254ca4306062e6ec7c5a8baf05c"
+      },
+      "licenses":[{
+        "name":"The Apache License, Version 2.0",
+        "url":"https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }],
+      "minJRE":"JVM_1_8",
+      "name":"FlatLaf",
+      "signatures":null,
+      "version":"3.6.2"
     }
   ],
   "installed":{
-    "changes":"3.6.2\t: ## Change Log\r\n\r\n#### New features and improvements\r\n\r\n- If using `FlatLaf.registerCustomDefaultsSource( \"com.myapp.themes\" )` and\r\n  named Java modules, it is no longer necessary to add `opens com.myapp.themes;`\r\n  to `module-info.java`. (issue #1026)\r\n- Extras: Made animated theme change (class `FlatAnimatedLafChange`) smoother.\r\n\r\n#### Fixed bugs\r\n\r\n- Tree and List: Fixed painting of rounded drop backgrounds. (issue #1023)\r\n- Popup: Showing tooltip in inactive window brought that window to front (made\r\n  it active) and potentially hid the previously active window. (issue #1037)\r\n- Popup: No longer reuse popup windows for menus to avoid immediately closing\r\n  dialogs on ChromeOS. (issue #1029)\r\n- macOS: Fixed window \"flashing\" when switching from a light to a dark theme (or\r\n  vice versa). Especially when using animated theme changer (see [FlatLaf Extras](flatlaf-extras)).\r\n\r\n#### Incompatibilities\r\n\r\n- FlatLaf properties files are now loaded using the UTF-8 character encoding\r\n  instead of ISO 8859-1. In usual properties files you will not notice any\r\n  difference because they use only ASCII characters, but if you've put localized\r\n  (non-English) texts (e.g. German umlauts) into your properties files, you need\r\n  to convert them to UTF-8. Properties files created with the FlatLaf Theme\r\n  Editor already use UTF-8, including in older versions. (issue #1031)\r\n",
-    "date":"2025-10-13T12:53:16.838+02:00",
+    "changes":"3.7\t: ## Highlights\r\n\r\n### System File Chooser\r\n\r\nClass `SystemFileChooser` (in package `com.formdev.flatlaf.util`) allows using **operating system file dialogs** in Java Swing applications.\r\n\r\nDetails: https://www.formdev.com/flatlaf/system-file-chooser/\r\n\r\n<img width=\"1108\" height=\"364\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/c88016d7-7630-41f8-8164-d8485d2fce6d\" />\r\n\r\n\r\n## Change Log\r\n\r\n#### New features and improvements\r\n\r\n- System File Chooser allows using **operating system file dialogs** in Java\r\n  Swing applications. (PR #988)\r\n- Zooming API. (PR #1051)\r\n- Icons:\r\n  - Support scaling Laf icons (checkbox, radiobutton, etc). (issue #1061)\r\n  - Scale checkbox and radiobutton icons when using [text styles](https://www.formdev.com/flatlaf/typography/#text_styles) `large`, `medium`, `small` and `mini`.\r\n- TabbedPane: Added icon-only tab mode, which shows tab icons but hides tab\r\n  titles. Tab titles are used in \"Show Hidden Tabs\" popup menu. (set client\r\n  property `JTabbedPane.tabWidthMode` to `\"iconOnly\"`)\r\n- TabbedPane: In scroll tab layout, propagate mouse wheel events to ancestors.\r\n  This allows mouse wheel scrolling if JTabbedPane is inside a JScrollPane. (PR #1030)\r\n\r\n#### Fixed bugs\r\n\r\n- CheckBox and RadioButton: Fixed styling of custom icon. Also fixed focus width\r\n  (and preferred size) if using custom icon. (PR #1060)\r\n- TabbedPane: In \"Show Hidden Tabs\" popup menu, do not show text \"x. Tab\" if tab\r\n  has icon but no title. (issue #1062)\r\n- TextField: Fixed wrong leading/trailing icon placement if border is set to `null`. (issue #1047)\r\n- Extras: UI defaults inspector: Exclude inspector window from being blocked by\r\n  modal dialogs. (issue #1048)\r\n- JideButton, JideToggleButton, JideSplitButton and JideToggleSplitButton: Paint\r\n  border in button style `TOOLBAR_STYLE` if in selected state. (issue #1045)\r\n- IntelliJ Themes: Fixed problem when using theme instance more than once when\r\n  switching to that theme. (issue #990)\r\n",
+    "date":"2025-12-11T14:11:30.883+01:00",
     "dependencies":null,
     "description":"Flat Look and Feel",
     "files":[
@@ -228,8 +252,8 @@
       "meta.json"
     ],
     "hashes":{
-      "flatlaf.jar":"32c79dee6d51341a3f8603598415841b4461fe535de2c34bcc8ee40e91e72267",
-      "../../code-ressourcen/flatlaf-sources.jar":"09fdeb40e692c60faf91c9a7946e2a08de7fc254ca4306062e6ec7c5a8baf05c"
+      "flatlaf.jar":"1dc4f08cc0e01122f5bc6cebe1dcf253872c1fe8126208f43dab314d7deb0da2",
+      "../../code-ressourcen/flatlaf-sources.jar":"019bf138b483671cf47eb49d9b4d0b3af0c09ff8db5eb649e5cfef4a7c4a2be2"
     },
     "licenses":[{
       "name":"The Apache License, Version 2.0",
@@ -237,7 +261,11 @@
     }],
     "minJRE":"JVM_1_8",
     "name":"FlatLaf",
-    "version":"3.6.2"
+    "signatures":{
+      "flatlaf.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpMW89AAoJELfiZip2QKBRvEAH/1Rtcxw0DB3syS77Hp4P0a9X\n8LTczf+6sW4E+lSkx3G4Pw5pzmq6hWzU4YGSP4b/cb61Ize5c/QQOBg8PLrzwFnq\np66JBsJr4R5Iz5FNyYtTt/6z/mFdlMjtTT7IqpFVKFjxfBXKgi2oVjQaVyiQ3JEm\nilFbjQmqXPOWheiyWrntaIVEhgoz02ta9GQeTAusbTQSZcxfHBsFb/Z2smsEcYlO\nW8jNilbKKLc5gExJIIkOL9vs2pbQs5ygkCXw8K8Zhay4LYFOBg4aSPrZwK8RyAeV\nw3TqBfce6vQc8bevO07tcohaKzUcEdUsGg35+1XreMIHgQhH+rHA8rngKGZjY6I=\n=DlkU\n-----END PGP SIGNATURE-----\n",
+      "../../code-ressourcen/flatlaf-sources.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpMW89AAoJELfiZip2QKBRIKAH/RoBx7T5FBp8FYmBhqfPUbSD\nqYSg7VomK4NM4Z7UbE1uevfY2NEZo6WR21qbe7c5L720qiEa+2e8IrTpn0j9oFVc\nf0DblbnN2kE4++N5YRXysxl+sgyMrEm1+X5M1L2NVrxnMytHbsh0JJlkFQUkF/ku\nXd3FjtVjAUp0Zp+3dJOD4ky42PEbD4BgQeL/c/4a+CKNrpbFtZMILXpm0NRaD3/6\nMpfmLstTo9gXUNGIa/MQb2Qc5/u1dGsvLFZi2p3BGBaf+7zSQfO0kbdu2W0z/IkL\ntwFmeqYyzu8Fkeblvmhs87Vm4CQ2TQ1xS4kwu/Qxu7pOtsjuh3DFcwpQKoRBD4U=\n=ycbO\n-----END PGP SIGNATURE-----\n"
+    },
+    "version":"3.7"
   },
   "minJRE":"1.8",
   "provider":"maven",

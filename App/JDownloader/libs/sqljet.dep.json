@@ -69,6 +69,7 @@
     }],
     "minJRE":"JVM_1_5",
     "name":"SqlJet Library",
+    "signatures":{"sqljet.jar":"-----BEGIN PGP SIGNATURE-----\nVersion: BCPG v1.46\n\niQEcBAABAgAGBQJS3bpHAAoJEKuq5U835vjhLjYH/jydBjhy2J4dJd+HMoJR5Abz\n89Uus7aARpbdv4qCX3nUUdMbl90p3c08jjBhhJIvSJJvFOZXl7j/VHxoLBDSek17\nBuO+GY7P982NZieEFObLV2XhJCCch5aJO/DfV8JWxY+ft0mrEHnJ3nDW1KpWSt/q\nfiu/8x5lzk5nM+q7TIclLA01yNpkuSRNaHvfdKqGgYVNonamPXDiJPvy0peNlJNn\n1kFBrZd7l1UKF+L/KyiUMkq+A1m54yrMQ9uDaYHTRmEggJVLPA6AsxmiwkFrxT0Q\nheLpGSoRx0jI0DpU3ZvpSp29t+u2qlDM/NfF/OTJSn1xaZ7AEhlW8YmKy071eKM=\n=M10z\n-----END PGP SIGNATURE-----\n"},
     "version":"1.1.10"
   },
   "minJRE":"1.6",

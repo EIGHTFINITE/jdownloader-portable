@@ -33,6 +33,7 @@
       }],
       "minJRE":"JVM_1_5",
       "name":"Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs",
+      "signatures":null,
       "version":"1.78.1"
     },
     {
@@ -62,6 +63,7 @@
       }],
       "minJRE":"JVM_1_5",
       "name":"Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs",
+      "signatures":null,
       "version":"1.79"
     },
     {
@@ -94,6 +96,7 @@
       }],
       "minJRE":"JVM_1_5",
       "name":"Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs",
+      "signatures":null,
       "version":"1.80"
     },
     {
@@ -118,16 +121,42 @@
       }],
       "minJRE":"JVM_1_5",
       "name":"Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs",
+      "signatures":null,
       "version":"1.81"
+    },
+    {
+      "changes":"1.82\t: Defects Fixed\r\n - SNOVA and MAYO are now correctly added to the JCA provider module-info file.\r\n - TLS: Avoid nonce reuse error in JCE AEAD workaround for pre-Java7.\r\n - BCJSSE: Session binding map is now shared across all stages of the session lifecycle (SunJSSE compatibility).\r\n - The CMCEPrivateKeyParameters#reconstructPublicKey method was returning an empty byte array. It now returns an encoding of the public key.\r\n - CBZip2InputStream no longer auto-closes at end-of-contents.\r\n - The BC CertPath implementation was eliminating certificates on the bases of the Key-ID. This is not in accordance with RFC 4158 and has been fixed.\r\n - Support for the previous set of libOQS Falcon OIDs has been restored.\r\n - The BC CipherInputStream could throw an exception if asked to handle an AEAD stream consisting of the MAC only. This has been fixed.\r\n - Some KeyAgreement classes were missing in the Java 11 class hierarchy. This has been fixed.\r\n - A typo in a constant name in the HPKE class has been fixed and the old constant deprecated.\r\n - Fuzzing analysis has been done on the OpenPGP API and additional code has been added to prevent escaping exceptions.\r\n \r\nAdditional Features and Functionality\r\n - SHA3Digest, CSHAKE, TupleHash, KMAC now provide support for Memoable and EncodableService.\r\n - BCJSSE: Added support for integrity-only cipher suites in TLS 1.3 per RFC 9150.\r\n - BCJSSE: Added support for system properties \"jdk.tls.client.maxInboundCertificateChainLength\" and \"jdk.tls.server.maxInboundCertificateChainLength\".\r\n - BCJSSE: Added support for ML-DSA signature schemes in TLS 1.3 per draft-ietf-tls-mldsa-00.\r\n - The Composite post-quantum signatures implementation has been updated to the latest draft (07) draft-ietf-lamps-pq-composite-sigs.\r\n - \"_PREHASH\" implementations are now provided for all composite signatures to allow the hash of the date to be used instead of the actual data in signature calculation.\r\n - The gradle build can now be used to generate an Bill of Materials (BOM) file.\r\n - It is now possible to configure the SignerInfoVerifierBuilder used by the SignedMailValidator class.\r\n - The Ascon family of algorithms has been updated with the latest published changes.\r\n - Composite signature keys can now be constructed from the individual keys of the algorithms composing the composite.\r\n - PGPSecretKey, PGPSignatureGenerator now support version 6.\r\n - Further optimisation work has been done on ML-KEM public key validation.\r\n - Zeroization of passwords in the JCA PKCS12 key store has been improved.\r\n - The \"org.bouncycastle.drbg.effective_256bits_entropy\" property has been added for platforms where the entropy source is not producing 1 full bit of entropy per bit and additional bits are required (default value 282).\r\n - Support has been added to the CMS content encryptors to allow a generated key to be passed in, rather than always having them generate their own.\r\n - OpenPGPKeyGenerator now allows for the use of empty UserIDs (version 4 compatibility).\r\n - The HQC KEM has been updated with the latest draft updates.\r\n \r\nAdditional Notes\r\n - The legacy post-quantum package has now been removed.",
+      "date":"2025-09-19T11:01:22.711+02:00",
+      "dependencies":[{
+        "groupId":"org.bouncycastle",
+        "artifactId":"bcutil-jdk15to18",
+        "version":"1.82",
+        "type":"jar"
+      }],
+      "description":"The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains  APIs for Java 1.5 to Java 1.8. The APIs are designed primarily to be used in conjunction with the BC Java provider but may also be used with other providers providing cryptographic services.",
+      "files":null,
+      "hashes":{
+        "bcpkix-jdk15on.jar":"0aa6dde3d61709b02af8200d24b73eea1680f3d18bf91f0ff67ff2f468ac158c",
+        "../code-ressourcen/bcpkix-jdk15on-sources.jar":"279bda92fab6c186a9aae3f3b14c506ad7b48c5380fdaa21fe35138e36695311"
+      },
+      "licenses":[{
+        "name":"Bouncy Castle Licence",
+        "url":"https://www.bouncycastle.org/licence.html",
+        "distribution":"repo"
+      }],
+      "minJRE":"JVM_1_5",
+      "name":"Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs",
+      "signatures":null,
+      "version":"1.82"
     }
   ],
   "installed":{
-    "changes":"1.82\t: Defects Fixed\r\n - SNOVA and MAYO are now correctly added to the JCA provider module-info file.\r\n - TLS: Avoid nonce reuse error in JCE AEAD workaround for pre-Java7.\r\n - BCJSSE: Session binding map is now shared across all stages of the session lifecycle (SunJSSE compatibility).\r\n - The CMCEPrivateKeyParameters#reconstructPublicKey method was returning an empty byte array. It now returns an encoding of the public key.\r\n - CBZip2InputStream no longer auto-closes at end-of-contents.\r\n - The BC CertPath implementation was eliminating certificates on the bases of the Key-ID. This is not in accordance with RFC 4158 and has been fixed.\r\n - Support for the previous set of libOQS Falcon OIDs has been restored.\r\n - The BC CipherInputStream could throw an exception if asked to handle an AEAD stream consisting of the MAC only. This has been fixed.\r\n - Some KeyAgreement classes were missing in the Java 11 class hierarchy. This has been fixed.\r\n - A typo in a constant name in the HPKE class has been fixed and the old constant deprecated.\r\n - Fuzzing analysis has been done on the OpenPGP API and additional code has been added to prevent escaping exceptions.\r\n \r\nAdditional Features and Functionality\r\n - SHA3Digest, CSHAKE, TupleHash, KMAC now provide support for Memoable and EncodableService.\r\n - BCJSSE: Added support for integrity-only cipher suites in TLS 1.3 per RFC 9150.\r\n - BCJSSE: Added support for system properties \"jdk.tls.client.maxInboundCertificateChainLength\" and \"jdk.tls.server.maxInboundCertificateChainLength\".\r\n - BCJSSE: Added support for ML-DSA signature schemes in TLS 1.3 per draft-ietf-tls-mldsa-00.\r\n - The Composite post-quantum signatures implementation has been updated to the latest draft (07) draft-ietf-lamps-pq-composite-sigs.\r\n - \"_PREHASH\" implementations are now provided for all composite signatures to allow the hash of the date to be used instead of the actual data in signature calculation.\r\n - The gradle build can now be used to generate an Bill of Materials (BOM) file.\r\n - It is now possible to configure the SignerInfoVerifierBuilder used by the SignedMailValidator class.\r\n - The Ascon family of algorithms has been updated with the latest published changes.\r\n - Composite signature keys can now be constructed from the individual keys of the algorithms composing the composite.\r\n - PGPSecretKey, PGPSignatureGenerator now support version 6.\r\n - Further optimisation work has been done on ML-KEM public key validation.\r\n - Zeroization of passwords in the JCA PKCS12 key store has been improved.\r\n - The \"org.bouncycastle.drbg.effective_256bits_entropy\" property has been added for platforms where the entropy source is not producing 1 full bit of entropy per bit and additional bits are required (default value 282).\r\n - Support has been added to the CMS content encryptors to allow a generated key to be passed in, rather than always having them generate their own.\r\n - OpenPGPKeyGenerator now allows for the use of empty UserIDs (version 4 compatibility).\r\n - The HQC KEM has been updated with the latest draft updates.\r\n \r\nAdditional Notes\r\n - The legacy post-quantum package has now been removed.",
-    "date":"2025-09-19T11:01:22.711+02:00",
+    "changes":"1.83\t: Defects Fixed",
+    "date":"2025-12-11T12:42:37.815+01:00",
     "dependencies":[{
       "groupId":"org.bouncycastle",
       "artifactId":"bcutil-jdk15to18",
-      "version":"1.82",
+      "version":"1.83",
       "type":"jar"
     }],
     "description":"The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains  APIs for Java 1.5 to Java 1.8. The APIs are designed primarily to be used in conjunction with the BC Java provider but may also be used with other providers providing cryptographic services.",
@@ -160,8 +189,8 @@
       "meta.json"
     ],
     "hashes":{
-      "bcpkix-jdk15on.jar":"0aa6dde3d61709b02af8200d24b73eea1680f3d18bf91f0ff67ff2f468ac158c",
-      "../code-ressourcen/bcpkix-jdk15on-sources.jar":"279bda92fab6c186a9aae3f3b14c506ad7b48c5380fdaa21fe35138e36695311"
+      "bcpkix-jdk15on.jar":"2d0b476e7c2fd8e75a622f287bf2e386b793720e4172eecc4274cf0b84e95197",
+      "../code-ressourcen/bcpkix-jdk15on-sources.jar":"fe27729d74e9ce416363ba8c6b3832803e48c09ee6973b5a868c061adb58c523"
     },
     "licenses":[{
       "name":"Bouncy Castle Licence",
@@ -170,7 +199,11 @@
     }],
     "minJRE":"JVM_1_5",
     "name":"Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs",
-    "version":"1.82"
+    "signatures":{
+      "bcpkix-jdk15on.jar":"-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCgAdFiEEexIbdqftbObmCtUXhOkTqOOnSMAFAmkmvMMACgkQhOkTqOOn\nSMBnUQwAiD/Bv8ac5oUWJaCzs7lPcri2gBG/Y3rPQ1OzWY2psRIbUlLuE61RjMwF\n/C1VfQEKGuPyfvkpq98mHcy++XOhFCt/KzzUFEMvhOGj4KZPfsxnvzoxhl2+YsQe\nYruNl2z63JGcUn47fd7UAO5PRTsmJ+wi2epQfX10Y8yfQWn2JkoSO5ZJfiF8RJQj\nrYoAfJ5IKAWkosDdb9HYu/zPdlGv0Bzc+FsZuW9hirdqj1+D38CuhQofcvy42uSG\n742hbC+hCu1g4vBikJ1qNDbzZ8y2n276ykhx5I/jRzQBlId21occws3BpmKb8OeO\nGurIBrc3ikjwinjRAohGO+v+g7rglxpmdG8eLzWCJqT92vPa6I0igU2P7XneMfds\neV+7bJq9zBCaGg2swZs9qxrXUhyF0OcMupkk7xrhzeCZ0xyTy5/n5qUyl6JEm5dd\n4KqNPGTyiExDqAkvn5IQjOerlensYbZkkwgNj1frPyLfqkHKQi2zRDGU+k19tX0f\n+l9YOBKm\n=0N35\n-----END PGP SIGNATURE-----\n",
+      "../code-ressourcen/bcpkix-jdk15on-sources.jar":"-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCgAdFiEEexIbdqftbObmCtUXhOkTqOOnSMAFAmkmvMMACgkQhOkTqOOn\nSMC9mQv9HuQpDpUu78nIs6OVILG1OX2u3x7C+e3EkPZrXdirfZIVZLlx7Jca3usv\n8R1PH+lBQeeN4DzojxA9oHeBMmv8NNEJG771MJqJsIR1Be6a715AbSX0sDQZUI3e\nNskWBO9Y2wHp8acCX0LSv55YSHlVH+rSvoSg1HqlrdSJLF5j+7IYpgxmIEdbq5RW\nQYwq8hLuRY0EkMtyU7d7m9ww6GQ60bPcZ1w6e2qhKb2aiTRei/Ab4flKDG3IoSer\nwfyQEh7WH3R8ppz2a0ya3Y3UlWOsILYrL4vzt0oLKxnFHHIhvAMhgNoCT55GTVKN\nmfROpW92y0uz+9bYyuUKei35DAoHT5juOc2eZ6PADu1n4fXvRcPJjlYwx9xzcift\nLkpCDvyVkcXK9/SxZ7L+xioeF2EM6ISHMgpE/Sl5mb0Uo8ePGVN4L7tJC5JPv88e\nNxMUvUPgdp7lHSVmtkXr+UJ5Ofc8rtR9com82rIQbgnf5/sNOI4wA6UJEbn2CSO5\nygimYeUh\n=6cs8\n-----END PGP SIGNATURE-----\n"
+    },
+    "version":"1.83"
   },
   "minJRE":"1.6",
   "provider":"maven",

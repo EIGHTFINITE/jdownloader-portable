@@ -49,6 +49,7 @@
     }],
     "minJRE":"JVM_1_6",
     "name":"filters",
+    "signatures":{"Filters.jar":"-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1.4.12 (Darwin)\n\niQEcBAABAgAGBQJQsLOJAAoJEN8IN6c43c1PM+sH/RB67z/+3wJgS2v/F31X39yW\nZoU2e9ZQ4E4wBJyCFg/usLkBSTwWGesICeqHs3voXYXkWtju3v5N87x3dIbvhmbg\nbUL8ELlhIvaoOeUnr+Fph+3+mDQPYh5XpxgbCigZKoS7QB1IA+JSylN2kCg8PSZ1\nSDq+PvW+xqQyk49VwRwgNSfvFu53cJ9rLCzIxyN0U6eXoEQKNZ3spWs12xLk3b7m\nICRfnCQUZEqYk99W9srXUXAZDKA1XVwd7CY5KGi8lw2VTFydXZBz9sH1crh2MupB\nYiGHCJ/NjLWiCmlOVE6eShX1NYvJtPLcP6laRnrYtWrzusLuq36PzOqfbL/g0e0=\n=Om+J\n-----END PGP SIGNATURE-----\n"},
     "version":"2.0.235-1"
   },
   "minJRE":"1.6",

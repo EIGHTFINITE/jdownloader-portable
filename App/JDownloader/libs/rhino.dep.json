@@ -43,6 +43,7 @@
     }],
     "minJRE":"JVM_1_6",
     "name":"Mozilla Rhino",
+    "signatures":{"js.jar":"-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJZn06gAAoJED82iFwk30t1Pt0IALDtLJEcA3L7RO1cLbiCL74Y\nHR7lt4RhQntu0AePX/zRNQBO/ZKg6m6mR9m8zif1JIJ+nIgEAqe+X2Ovz8gNJwY4\nx+gaUENkW9IJbpSynvbWc+HpvjEShcUpRazDMXc6HDW6T+wdLJGyLnsHpfdtTp4q\nKXIY4YbcYGuzG9XmYmVZFLCksNvv3eav0ncMsdkkp8DklAOKlGHr5XUI2w7F/GZG\nChXg+MHWvW1PjocwiHCX2umCZMCDSRGwkf9PB3ZWWyjIxkWHow0rFhDa/LGPfOsj\nOtw0xaWJoalJadcZhYOvR+B3lpVUh/L31VHNvn7ZRRBIEjWduaAiWUN/ew85O7U=\n=yq/q\n-----END PGP SIGNATURE-----\n"},
     "version":"1.7.7.2"
   },
   "minJRE":"1.6",
