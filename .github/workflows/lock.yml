@@ -8,7 +8,7 @@ jobs:
   lock:
     runs-on: ubuntu-latest
     steps:
-    - uses: dessant/lock-threads@v5.0.1
+    - uses: dessant/lock-threads@v6.0.0
       continue-on-error: true
       with:
         add-issue-labels: 'locked'
