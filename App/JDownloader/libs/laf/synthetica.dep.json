@@ -14,9 +14,11 @@
     "minJRE":"JVM_1_6",
     "name":"Synthetica",
     "signatures":{},
-    "version":"2.34.0"
+    "version":"2.34.0",
+    "vulnerabilities":null
   },
   "minJRE":"1.6",
+  "minReleasedAgeDays":null,
   "provider":"manual",
   "renames":null,
   "requiredBy":[],

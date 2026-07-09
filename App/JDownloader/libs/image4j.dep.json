@@ -14,9 +14,11 @@
     "minJRE":"JVM_1_6",
     "name":"ICO (Microsoft icon format - 1, 4, 8, 24 and 32 bit [XP uncompressed, Vista compressed])image4j - Image library in java",
     "signatures":{},
-    "version":"0.7-appwork.jre1.6"
+    "version":"0.7-appwork.jre1.6",
+    "vulnerabilities":null
   },
   "minJRE":"1.6",
+  "minReleasedAgeDays":null,
   "provider":"manual",
   "renames":null,
   "requiredBy":[],

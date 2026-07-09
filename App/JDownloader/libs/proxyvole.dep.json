@@ -14,9 +14,11 @@
     "minJRE":"JVM_1_6",
     "name":"ProxyVole",
     "signatures":{},
-    "version":"1.0.5-appwork.0.1"
+    "version":"1.0.5-appwork.0.1",
+    "vulnerabilities":null
   },
   "minJRE":"1.6",
+  "minReleasedAgeDays":null,
   "provider":"manual",
   "renames":null,
   "requiredBy":[],

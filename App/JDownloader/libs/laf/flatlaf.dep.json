@@ -17,7 +17,8 @@
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
       "signatures":null,
-      "version":"3.5.2"
+      "version":"3.5.2",
+      "vulnerabilities":[]
     },
     {
       "changes":"3.5.3\t: ## Change Log\r\n\r\n#### Fixed bugs\r\n\r\n- HTML: Fixed wrong rendering if HTML text contains `<style>` tag with\r\n  attributes (e.g. `<style type='text/css'>`). (issue #905; regression in 3.5.1)\r\n- FlatLaf window decorations:\r\n  - Windows: Fixed possible deadlock with TabbedPane in window title area in\r\n    \"full window content\" mode. (issue #909)\r\n  - Windows: Fixed wrong layout in maximized frame after changing screen scale\r\n    factor. (issue #904)\r\n  - Linux: Fixed continuous cursor toggling between resize and standard cursor\r\n    when resizing window. (issue #907)\r\n  - Fixed sometimes broken window moving with SplitPane in window title area in\r\n    \"full window content\" mode. (issue #926)\r\n- Popup: On Windows 10, fixed misplaced popup drop shadow. (issue #911; regression in 3.5)\r\n- Popup: Fixed NPE if `GraphicsConfiguration` is `null` on Windows. (issue #921)\r\n- Theme Editor: Fixed using color picker on secondary screen.\r\n- Fixed detection of Windows 11 if custom exe launcher does not specify Windows 10+\r\n  compatibility in application manifest. (issue #916)\r\n- Linux: Fixed slightly different font size (or letter width) used to paint HTML\r\n  text when default font family is _Cantarell_ (e.g. on Fedora). (issue #912)\r\n\r\n#### Other Changes\r\n\r\n- Class `FlatPropertiesLaf` now supports FlatLaf macOS themes as base themes.\r\n",
@@ -33,7 +34,8 @@
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
       "signatures":null,
-      "version":"3.5.3"
+      "version":"3.5.3",
+      "vulnerabilities":[]
     },
     {
       "changes":"3.5.4\t: Fixes a regression in 3.5.3. If you use 3.5.3 it is strongly recommended to upgrade to 3.5.4.\r\n\r\n## Change Log\r\n\r\n- HTML: Fixed NPE when using HTML text on a component with `null` font.\r\n  (issue #930; PR #931; regression in 3.5)\r\n- Linux: Fixed NPE when using FlatLaf window decorations and switching theme.\r\n  (issue #933; regression in 3.5.3)\r\n",
@@ -52,7 +54,8 @@
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
       "signatures":null,
-      "version":"3.5.4"
+      "version":"3.5.4",
+      "vulnerabilities":[]
     },
     {
       "changes":"3.6\t: ## Change Log\r\n\r\n#### New features and improvements\r\n\r\n- macOS: Re-enabled rounded popup border (see PR #772) on macOS 14.4+ (was disabled in 3.5.x).\r\n- Increased contrast of text for better readability: (PR #972; issue #762)\r\n  - In **FlatLaf Dark**, **FlatLaf Darcula** and many dark IntelliJ themes, made all text colors brighter.\r\n  - In **FlatLaf Light**, **FlatLaf IntelliJ** and many light IntelliJ themes, made disabled text colors slightly darker.\r\n  - In **FlatLaf macOS Light**, made disabled text colors darker.\r\n  - In **FlatLaf macOS Dark**, made text colors of \"default\" button and selected ToggleButton lighter.\r\n- CheckBox: Support styling indeterminate state of [tri-state check boxes](https://www.javadoc.io/doc/com.formdev/flatlaf-extras/latest/com/formdev/flatlaf/extras/components/FlatTriStateCheckBox.html). (PR #936; issue #919)\r\n- List: Support for alternate row highlighting. (PR #939)\r\n- Tree: Support for alternate row highlighting. (PR #903)\r\n- Tree: Support wide cell renderer. (issue #922)\r\n- ScrollBar: Use rounded thumb also on Windows (as on macOS and Linux) and made\r\n  thumb slightly darker/lighter. (issue #918)\r\n- Extras: `FlatSVGIcon` color filters now can access painting component to\r\n  implement component state based color mappings. (issue #906)\r\n- Linux:\r\n  - Rounded iconify/maximize/close buttons if using FlatLaf window decorations. (PR #971)\r\n  - Added `libflatlaf-linux-arm64.so` for Linux on ARM64. (issue #899)\r\n  - Use X11 window manager events to resize window, if FlatLaf window\r\n    decorations are enabled. This gives FlatLaf windows a more \"native\" feeling. (issue #866)\r\n- IntelliJ Themes:\r\n  - Updated to latest versions and fixed various issues.\r\n  - Support customizing through properties files. (issue #824)\r\n- SwingX: Support `JXTipOfTheDay` component. (issue #980)\r\n- Support key prefixes for Linux desktop environments (e.g. `[gnome]`, `[kde]`\r\n  or `[xfce]`) in properties files. (issue #974)\r\n- Support custom key prefixes (e.g. `[win10]` or `[test]`) in properties files. (issue #649)\r\n- Support multi-prefixed keys (e.g. `[dark][gnome]TitlePane.buttonBackground`).\r\n  The value is only used if all prefixes match current platform/theme.\r\n- Support new component border color to indicate success state (set client\r\n  property `JComponent.outline` to `success`). (PR #982, issue #945)\r\n- Fonts: Updated **Inter** to [v4.1](https://github.com/rsms/inter/releases/tag/v4.1).\r\n\r\n#### Fixed bugs\r\n\r\n- Button: Fixed background and foreground colors for `borderless` and\r\n  `toolBarButton` style default buttons (`JButton.isDefaultButton()` is `true`). (issue #947)\r\n- FileChooser: Improved performance when navigating to large directories with\r\n  thousands of files. (issue #953)\r\n- PopupFactory: Fixed NPE on Windows 10 when `owner` is `null`. (issue #952)\r\n- Popup: On Windows 10, drop shadow of heavy-weight popup was not updated if\r\n  popup moved/resized. (issue #942)\r\n- FlatLaf window decorations:\r\n  - Minimize and maximize icons were not shown for custom scale factors less\r\n    than 100% (e.g. `-Dflatlaf.uiScale=75%`). (issue #951)\r\n  - Linux: Fixed occasional maximizing of window when single-clicking the\r\n    window's title bar. (issue #637)\r\n- Styling: MigLayout visual padding was not updated after applying style to\r\n  Button, ComboBox, Spinner, TextField (and subclasses) and ToggleButton. (issue #965)\r\n- Linux: Popups (menus and combobox lists) were not hidden when window is moved,\r\n  resized, maximized, restored, iconified or switched to another window. (issue #962)\r\n- Fixed loading FlatLaf UI delegate classes when using FlatLaf in special\r\n  application where multiple class loaders are involved. E.g. in Eclipse plugin\r\n  or in LibreOffice extension. (issues #955 and #851)\r\n- HTML: Fixed rendering of `<hr noshade>` in dark themes. (issue #932)\r\n- TextComponents: `selectAllOnFocusPolicy` related changes:\r\n  - No longer select all text if selection (or caret position) was changed by\r\n    application and `selectAllOnFocusPolicy` is `once` (the default). (issue #983)\r\n  - FormattedTextField and Spinner: `selectAllOnFocusPolicy = once` behaves now\r\n    as `always` (was `never` before), which means that all text is selected when\r\n    component gains focus. This is because of special behavior of\r\n    `JFormattedTextField` that did not allow implementation of `once`.\r\n  - Client property `JTextField.selectAllOnFocusPolicy` now also works on\r\n    (editable) `JComboBox` and on `JSpinner`.\r\n  - Added client property `JTextField.selectAllOnMouseClick` to override UI\r\n    property `TextComponent.selectAllOnMouseClick`. (issue #961)\r\n  - For `selectAllOnMouseClick = true`, clicking with the mouse into the text\r\n    field, to focus it, now always selects all text, even if `selectAllOnFocusPolicy` is `once`.\r\n\r\n#### Incompatibilities\r\n\r\n- IntelliJ Themes:\r\n  - Theme prefix in `IntelliJTheme$ThemeLaf.properties` changed from `[theme-name]` to `{theme-name}`.\r\n  - Renamed classes in package `com.formdev.flatlaf.intellijthemes.materialthemeuilite` from `Flat<theme>` to `FlatMT<theme>`.\r\n  - Removed `Gruvbox Dark Medium` and `Gruvbox Dark Soft` themes.\r\n- Prefixed keys in properties files (e.g. `[dark]Button.background` or\r\n  `[win]Button.arc`) are now handled earlier than before. In previous versions,\r\n  prefixed keys always had higher priority than unprefixed keys and did always\r\n  overwrite unprefixed keys. Now prefixed keys are handled in same order as\r\n  unprefixed keys, which means that if a key is prefixed and unprefixed (e.g.\r\n  `[win]Button.arc` and `Button.arc`), the one which is last specified in\r\n  properties file is used.\\\r\n  Following worked in previous versions, but now `Button.arc` is always `6`:\r\n  ~~~properties\r\n  [win]Button.arc = 12\r\n  Button.arc = 6\r\n  ~~~\r\n  This works in new (and old) versions:\r\n  ~~~properties\r\n  Button.arc = 6\r\n  [win]Button.arc = 12\r\n  ~~~\r\n",
@@ -71,7 +74,8 @@
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
       "signatures":null,
-      "version":"3.6"
+      "version":"3.6",
+      "vulnerabilities":[]
     },
     {
       "changes":"3.6.1\t: ## Change Log\r\n\r\n- Extras: Support JSVG 2.0.0. Minimum JSVG version is now 1.6.0. (issue #997)\r\n- FlatLaf window decorations (Windows 10/11 only): Improved diagonal window\r\n  resizing on top-left and top-right window corners. Top window resize area now\r\n  also covers iconify/maximize/close buttons. (issue #1015)\r\n- ToggleButton: Styling `selectedForeground` did not work if `foreground` is also styled. (issue #1017)\r\n- JideSplitButton: Fixed updating popup when switching theme. (issue #1000)\r\n- IntelliJ Themes: Fixed logging false errors when loading 3rd party `.theme.json` files. (issue #990)\r\n- Linux: Popups appeared in wrong position on multi-screen setup if primary\r\n  display is located below or right to secondary display. (see [NetBeans issue #8532](https://github.com/apache/netbeans/issues/8532))\r\n- macOS: Fixed popup flickering after theme change. (issue #1009)\r\n- macOS with JetBrains Runtime: Fixed sometimes empty popups. (issue #1019)\r\n",
@@ -90,7 +94,8 @@
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
       "signatures":null,
-      "version":"3.6.1"
+      "version":"3.6.1",
+      "vulnerabilities":[]
     },
     {
       "changes":"3.6.2\t: ## Change Log\r\n\r\n#### New features and improvements\r\n\r\n- If using `FlatLaf.registerCustomDefaultsSource( \"com.myapp.themes\" )` and\r\n  named Java modules, it is no longer necessary to add `opens com.myapp.themes;`\r\n  to `module-info.java`. (issue #1026)\r\n- Extras: Made animated theme change (class `FlatAnimatedLafChange`) smoother.\r\n\r\n#### Fixed bugs\r\n\r\n- Tree and List: Fixed painting of rounded drop backgrounds. (issue #1023)\r\n- Popup: Showing tooltip in inactive window brought that window to front (made\r\n  it active) and potentially hid the previously active window. (issue #1037)\r\n- Popup: No longer reuse popup windows for menus to avoid immediately closing\r\n  dialogs on ChromeOS. (issue #1029)\r\n- macOS: Fixed window \"flashing\" when switching from a light to a dark theme (or\r\n  vice versa). Especially when using animated theme changer (see [FlatLaf Extras](flatlaf-extras)).\r\n\r\n#### Incompatibilities\r\n\r\n- FlatLaf properties files are now loaded using the UTF-8 character encoding\r\n  instead of ISO 8859-1. In usual properties files you will not notice any\r\n  difference because they use only ASCII characters, but if you've put localized\r\n  (non-English) texts (e.g. German umlauts) into your properties files, you need\r\n  to convert them to UTF-8. Properties files created with the FlatLaf Theme\r\n  Editor already use UTF-8, including in older versions. (issue #1031)\r\n",
@@ -109,12 +114,36 @@
       "minJRE":"JVM_1_8",
       "name":"FlatLaf",
       "signatures":null,
-      "version":"3.6.2"
+      "version":"3.6.2",
+      "vulnerabilities":[]
+    },
+    {
+      "changes":"3.7\t: ## Highlights\r\n\r\n### System File Chooser\r\n\r\nClass `SystemFileChooser` (in package `com.formdev.flatlaf.util`) allows using **operating system file dialogs** in Java Swing applications.\r\n\r\nDetails: https://www.formdev.com/flatlaf/system-file-chooser/\r\n\r\n<img width=\"1108\" height=\"364\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/c88016d7-7630-41f8-8164-d8485d2fce6d\" />\r\n\r\n\r\n## Change Log\r\n\r\n#### New features and improvements\r\n\r\n- System File Chooser allows using **operating system file dialogs** in Java\r\n  Swing applications. (PR #988)\r\n- Zooming API. (PR #1051)\r\n- Icons:\r\n  - Support scaling Laf icons (checkbox, radiobutton, etc). (issue #1061)\r\n  - Scale checkbox and radiobutton icons when using [text styles](https://www.formdev.com/flatlaf/typography/#text_styles) `large`, `medium`, `small` and `mini`.\r\n- TabbedPane: Added icon-only tab mode, which shows tab icons but hides tab\r\n  titles. Tab titles are used in \"Show Hidden Tabs\" popup menu. (set client\r\n  property `JTabbedPane.tabWidthMode` to `\"iconOnly\"`)\r\n- TabbedPane: In scroll tab layout, propagate mouse wheel events to ancestors.\r\n  This allows mouse wheel scrolling if JTabbedPane is inside a JScrollPane. (PR #1030)\r\n\r\n#### Fixed bugs\r\n\r\n- CheckBox and RadioButton: Fixed styling of custom icon. Also fixed focus width\r\n  (and preferred size) if using custom icon. (PR #1060)\r\n- TabbedPane: In \"Show Hidden Tabs\" popup menu, do not show text \"x. Tab\" if tab\r\n  has icon but no title. (issue #1062)\r\n- TextField: Fixed wrong leading/trailing icon placement if border is set to `null`. (issue #1047)\r\n- Extras: UI defaults inspector: Exclude inspector window from being blocked by\r\n  modal dialogs. (issue #1048)\r\n- JideButton, JideToggleButton, JideSplitButton and JideToggleSplitButton: Paint\r\n  border in button style `TOOLBAR_STYLE` if in selected state. (issue #1045)\r\n- IntelliJ Themes: Fixed problem when using theme instance more than once when\r\n  switching to that theme. (issue #990)\r\n",
+      "date":"2025-12-11T14:11:30.883+01:00",
+      "dependencies":null,
+      "description":"Flat Look and Feel",
+      "files":null,
+      "hashes":{
+        "flatlaf.jar":"1dc4f08cc0e01122f5bc6cebe1dcf253872c1fe8126208f43dab314d7deb0da2",
+        "../../code-ressourcen/flatlaf-sources.jar":"019bf138b483671cf47eb49d9b4d0b3af0c09ff8db5eb649e5cfef4a7c4a2be2"
+      },
+      "licenses":[{
+        "name":"The Apache License, Version 2.0",
+        "url":"https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }],
+      "minJRE":"JVM_1_8",
+      "name":"FlatLaf",
+      "signatures":{
+        "flatlaf.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpMW89AAoJELfiZip2QKBRvEAH/1Rtcxw0DB3syS77Hp4P0a9X\n8LTczf+6sW4E+lSkx3G4Pw5pzmq6hWzU4YGSP4b/cb61Ize5c/QQOBg8PLrzwFnq\np66JBsJr4R5Iz5FNyYtTt/6z/mFdlMjtTT7IqpFVKFjxfBXKgi2oVjQaVyiQ3JEm\nilFbjQmqXPOWheiyWrntaIVEhgoz02ta9GQeTAusbTQSZcxfHBsFb/Z2smsEcYlO\nW8jNilbKKLc5gExJIIkOL9vs2pbQs5ygkCXw8K8Zhay4LYFOBg4aSPrZwK8RyAeV\nw3TqBfce6vQc8bevO07tcohaKzUcEdUsGg35+1XreMIHgQhH+rHA8rngKGZjY6I=\n=DlkU\n-----END PGP SIGNATURE-----\n",
+        "../../code-ressourcen/flatlaf-sources.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpMW89AAoJELfiZip2QKBRIKAH/RoBx7T5FBp8FYmBhqfPUbSD\nqYSg7VomK4NM4Z7UbE1uevfY2NEZo6WR21qbe7c5L720qiEa+2e8IrTpn0j9oFVc\nf0DblbnN2kE4++N5YRXysxl+sgyMrEm1+X5M1L2NVrxnMytHbsh0JJlkFQUkF/ku\nXd3FjtVjAUp0Zp+3dJOD4ky42PEbD4BgQeL/c/4a+CKNrpbFtZMILXpm0NRaD3/6\nMpfmLstTo9gXUNGIa/MQb2Qc5/u1dGsvLFZi2p3BGBaf+7zSQfO0kbdu2W0z/IkL\ntwFmeqYyzu8Fkeblvmhs87Vm4CQ2TQ1xS4kwu/Qxu7pOtsjuh3DFcwpQKoRBD4U=\n=ycbO\n-----END PGP SIGNATURE-----\n"
+      },
+      "version":"3.7",
+      "vulnerabilities":[]
     }
   ],
   "installed":{
-    "changes":"3.7\t: ## Highlights\r\n\r\n### System File Chooser\r\n\r\nClass `SystemFileChooser` (in package `com.formdev.flatlaf.util`) allows using **operating system file dialogs** in Java Swing applications.\r\n\r\nDetails: https://www.formdev.com/flatlaf/system-file-chooser/\r\n\r\n<img width=\"1108\" height=\"364\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/c88016d7-7630-41f8-8164-d8485d2fce6d\" />\r\n\r\n\r\n## Change Log\r\n\r\n#### New features and improvements\r\n\r\n- System File Chooser allows using **operating system file dialogs** in Java\r\n  Swing applications. (PR #988)\r\n- Zooming API. (PR #1051)\r\n- Icons:\r\n  - Support scaling Laf icons (checkbox, radiobutton, etc). (issue #1061)\r\n  - Scale checkbox and radiobutton icons when using [text styles](https://www.formdev.com/flatlaf/typography/#text_styles) `large`, `medium`, `small` and `mini`.\r\n- TabbedPane: Added icon-only tab mode, which shows tab icons but hides tab\r\n  titles. Tab titles are used in \"Show Hidden Tabs\" popup menu. (set client\r\n  property `JTabbedPane.tabWidthMode` to `\"iconOnly\"`)\r\n- TabbedPane: In scroll tab layout, propagate mouse wheel events to ancestors.\r\n  This allows mouse wheel scrolling if JTabbedPane is inside a JScrollPane. (PR #1030)\r\n\r\n#### Fixed bugs\r\n\r\n- CheckBox and RadioButton: Fixed styling of custom icon. Also fixed focus width\r\n  (and preferred size) if using custom icon. (PR #1060)\r\n- TabbedPane: In \"Show Hidden Tabs\" popup menu, do not show text \"x. Tab\" if tab\r\n  has icon but no title. (issue #1062)\r\n- TextField: Fixed wrong leading/trailing icon placement if border is set to `null`. (issue #1047)\r\n- Extras: UI defaults inspector: Exclude inspector window from being blocked by\r\n  modal dialogs. (issue #1048)\r\n- JideButton, JideToggleButton, JideSplitButton and JideToggleSplitButton: Paint\r\n  border in button style `TOOLBAR_STYLE` if in selected state. (issue #1045)\r\n- IntelliJ Themes: Fixed problem when using theme instance more than once when\r\n  switching to that theme. (issue #990)\r\n",
-    "date":"2025-12-11T14:11:30.883+01:00",
+    "changes":"3.7.1\t: ## Change Log\r\n\r\n- System File Chooser:\r\n  - Update current filter before invoking approve callback and after closing   dialog. (issue #1065)\r\n  - Added `PatternFilter` to support glob file filter (e.g. `*.tar.gz`) on\r\n    Windows and on Linux, but not on macOS. (issue #1076)\r\n  - Fixed: System and Swing file dialogs were shown at the same time if\r\n    application has no other displayable window. (issue #1078)\r\n  - On Linux: Check whether required GSettings schemas are installed to avoid\r\n    application crash (occurred on NixOS with Plasma/KDE desktop). (issue #1069)\r\n- ComboBox: Added UI property `ComboBox.buttonFocusedEditableBackground`. (issue  #1068)\r\n- Dialog: Some client properties (e.g. `JRootPane.titleBarShowTitle`) did not\r\n  work before the dialog was made visible. (issue #1081)\r\n- Popup: Fixed scrolling popup painting issue on Windows 10 when a glass pane is\r\n  visible and frame is maximized. (issue #1071)\r\n- Slider: Styling `thumbSize` or `focusWidth` did not update slider size/layout. (PR #1074)\r\n- ToolBar: Grip disappeared when switching between Look and Feels. (issue #1075)\r\n- macOS: Popups (menus and combobox lists) were not always hidden when window is  resized. (issue #1082)\r\n- Extras:\r\n  - UI defaults inspector: Fixed NPE if color of `FlatLineBorder` is null. Also\r\n    use `FlatLineBorder` line color as cell background color in \"Value\" column. (PR #1080)\r\n  - `FlatDesktop`: Avoid unnecessary logging if desktop is not supported (e.g.\r\n    on NixOS with Plasma/KDE desktop).\r\n",
+    "date":"2026-07-07T10:57:23.167+02:00",
     "dependencies":null,
     "description":"Flat Look and Feel",
     "files":[
@@ -252,8 +281,8 @@
       "meta.json"
     ],
     "hashes":{
-      "flatlaf.jar":"1dc4f08cc0e01122f5bc6cebe1dcf253872c1fe8126208f43dab314d7deb0da2",
-      "../../code-ressourcen/flatlaf-sources.jar":"019bf138b483671cf47eb49d9b4d0b3af0c09ff8db5eb649e5cfef4a7c4a2be2"
+      "flatlaf.jar":"11f498f3c89596a782fceaa727c853a665067aeabc09bd682dc53b3ef237d0c7",
+      "../../code-ressourcen/flatlaf-sources.jar":"fbc0fa0f2ccdb8a65c4f1e35bdc54547737c0ad1cf8fe029b4c969943183822c"
     },
     "licenses":[{
       "name":"The Apache License, Version 2.0",
@@ -262,12 +291,14 @@
     "minJRE":"JVM_1_8",
     "name":"FlatLaf",
     "signatures":{
-      "flatlaf.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpMW89AAoJELfiZip2QKBRvEAH/1Rtcxw0DB3syS77Hp4P0a9X\n8LTczf+6sW4E+lSkx3G4Pw5pzmq6hWzU4YGSP4b/cb61Ize5c/QQOBg8PLrzwFnq\np66JBsJr4R5Iz5FNyYtTt/6z/mFdlMjtTT7IqpFVKFjxfBXKgi2oVjQaVyiQ3JEm\nilFbjQmqXPOWheiyWrntaIVEhgoz02ta9GQeTAusbTQSZcxfHBsFb/Z2smsEcYlO\nW8jNilbKKLc5gExJIIkOL9vs2pbQs5ygkCXw8K8Zhay4LYFOBg4aSPrZwK8RyAeV\nw3TqBfce6vQc8bevO07tcohaKzUcEdUsGg35+1XreMIHgQhH+rHA8rngKGZjY6I=\n=DlkU\n-----END PGP SIGNATURE-----\n",
-      "../../code-ressourcen/flatlaf-sources.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpMW89AAoJELfiZip2QKBRIKAH/RoBx7T5FBp8FYmBhqfPUbSD\nqYSg7VomK4NM4Z7UbE1uevfY2NEZo6WR21qbe7c5L720qiEa+2e8IrTpn0j9oFVc\nf0DblbnN2kE4++N5YRXysxl+sgyMrEm1+X5M1L2NVrxnMytHbsh0JJlkFQUkF/ku\nXd3FjtVjAUp0Zp+3dJOD4ky42PEbD4BgQeL/c/4a+CKNrpbFtZMILXpm0NRaD3/6\nMpfmLstTo9gXUNGIa/MQb2Qc5/u1dGsvLFZi2p3BGBaf+7zSQfO0kbdu2W0z/IkL\ntwFmeqYyzu8Fkeblvmhs87Vm4CQ2TQ1xS4kwu/Qxu7pOtsjuh3DFcwpQKoRBD4U=\n=ycbO\n-----END PGP SIGNATURE-----\n"
+      "flatlaf.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpr+QwAAoJELfiZip2QKBRElYIAMGtsuyBKbDIa7PKmgmnlyTj\na9r9Wzv70Yn/lPWNPxyHiB2WEsP1J+g/8fOqSDy9/EB7c244JjGMN+zmlGYIPvzM\nCPrPABdnHCX01FYbD8/LDUyp52sxi5x6UKdN9DNaZ36qKSSXnAsIvoNYH9JS/A4s\nFJPfFeo+ziChTrBYKTjhSgNF/07MOzgFZr5LYiMmIU769TDl2ZZnzsjaT4TylB53\n9/cvuAcvm8QGK+ywbLUyukqE3aExYKKDJABKsyxshvlIKqVJ9cerraIqb+rS4KH+\nIhVHqWH0m+VtqRyOsN9URKk6KilV9dEnmL3ovMKJlAFujR/6BElouVBpgEaC7ww=\n=pWa8\n-----END PGP SIGNATURE-----\n",
+      "../../code-ressourcen/flatlaf-sources.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpr+QwAAoJELfiZip2QKBRJhQH/i3rTo0rtUXwaJ8jpEBPP8kU\nboBuUG8Rap9BfjH+QjhrCZQsTRI/F0ps16wAZMmHquz2LLln/I9y4jFsjLL/JTaq\nxBlgbBGuGcSNAHwfsriG4G5r3KTTsUS5tAthuapdx9YF8hB1mfal2N+RyQeRZazp\nX4XOx4BJyv+0wH0bvEADc+C22abml/R1/66gEFcN2xfzXBj/HPIezznknp9rFAxF\nBeVN/CNo3OHQNlu4cy+iI8k9LgLlswyGODfXqBYMgtYTaepvwyzHnlEH54qlljzk\nWquWwnz8UdEjVRrvB1nCAmRkOvSFq45yKjD3gz0hvNX4voBsujFhHKYQRdBszxI=\n=hUnR\n-----END PGP SIGNATURE-----\n"
     },
-    "version":"3.7"
+    "version":"3.7.1",
+    "vulnerabilities":[]
   },
   "minJRE":"1.8",
+  "minReleasedAgeDays":null,
   "provider":"maven",
   "renames":{"(.*-sources.*)":"../../code-ressourcen/$1"},
   "requiredBy":[],
