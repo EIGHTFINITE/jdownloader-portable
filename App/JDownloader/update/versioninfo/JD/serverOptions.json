@@ -79,6 +79,7 @@
  "tools/mac/ffmpeg_as_11+"                                : "{\r\n\r\n\"parentIDList\":[\"ffmpeg_as_11+\"]\r\n}",
  "extensions/EventScripter.jar"                           : "{\r\n\"parentIDList\":[\"eventscripter\"]\r\n}",
  "tools/Windows/mediainfo/i386"                           : "{\r\n\"os64Bit\":\"FALSE\",\r\n\"os32Bit\":\"TRUE\"\r\n}",
+ "tools/mac/ffmpeg_10.13-14"                              : "{\r\n\r\n\"parentIDList\":[\"ffmpeg_10.13-14\"]\r\n}",
  "translations/org/jdownloader/extensions/streaming"      : "{\r\n\"parentIDList\":[\"streaming\"]\r\n}",
  "tools/mac/ffmpeg_10.6+"                                 : "{\r\n\r\n\"parentIDList\":[\"ffmpeg_10.6+\"]\r\n}",
  "tools/Windows/ffmpeg/arm64"                             : "{\r\n\"os64Bit\":\"TRUE\",\r\n\"os32Bit\":\"FALSE\",\r\n\"arch\":\"ARM\"\r\n}",
