@@ -139,11 +139,34 @@
       },
       "version":"3.7",
       "vulnerabilities":[]
+    },
+    {
+      "changes":"3.7.1\t: ## Change Log\r\n\r\n- System File Chooser:\r\n  - Update current filter before invoking approve callback and after closing   dialog. (issue #1065)\r\n  - Added `PatternFilter` to support glob file filter (e.g. `*.tar.gz`) on\r\n    Windows and on Linux, but not on macOS. (issue #1076)\r\n  - Fixed: System and Swing file dialogs were shown at the same time if\r\n    application has no other displayable window. (issue #1078)\r\n  - On Linux: Check whether required GSettings schemas are installed to avoid\r\n    application crash (occurred on NixOS with Plasma/KDE desktop). (issue #1069)\r\n- ComboBox: Added UI property `ComboBox.buttonFocusedEditableBackground`. (issue  #1068)\r\n- Dialog: Some client properties (e.g. `JRootPane.titleBarShowTitle`) did not\r\n  work before the dialog was made visible. (issue #1081)\r\n- Popup: Fixed scrolling popup painting issue on Windows 10 when a glass pane is\r\n  visible and frame is maximized. (issue #1071)\r\n- Slider: Styling `thumbSize` or `focusWidth` did not update slider size/layout. (PR #1074)\r\n- ToolBar: Grip disappeared when switching between Look and Feels. (issue #1075)\r\n- macOS: Popups (menus and combobox lists) were not always hidden when window is  resized. (issue #1082)\r\n- Extras:\r\n  - UI defaults inspector: Fixed NPE if color of `FlatLineBorder` is null. Also\r\n    use `FlatLineBorder` line color as cell background color in \"Value\" column. (PR #1080)\r\n  - `FlatDesktop`: Avoid unnecessary logging if desktop is not supported (e.g.\r\n    on NixOS with Plasma/KDE desktop).\r\n",
+      "date":"2026-07-07T10:57:23.167+02:00",
+      "dependencies":null,
+      "description":"Flat Look and Feel",
+      "files":null,
+      "hashes":{
+        "flatlaf.jar":"11f498f3c89596a782fceaa727c853a665067aeabc09bd682dc53b3ef237d0c7",
+        "../../code-ressourcen/flatlaf-sources.jar":"fbc0fa0f2ccdb8a65c4f1e35bdc54547737c0ad1cf8fe029b4c969943183822c"
+      },
+      "licenses":[{
+        "name":"The Apache License, Version 2.0",
+        "url":"https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }],
+      "minJRE":"JVM_1_8",
+      "name":"FlatLaf",
+      "signatures":{
+        "flatlaf.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpr+QwAAoJELfiZip2QKBRElYIAMGtsuyBKbDIa7PKmgmnlyTj\na9r9Wzv70Yn/lPWNPxyHiB2WEsP1J+g/8fOqSDy9/EB7c244JjGMN+zmlGYIPvzM\nCPrPABdnHCX01FYbD8/LDUyp52sxi5x6UKdN9DNaZ36qKSSXnAsIvoNYH9JS/A4s\nFJPfFeo+ziChTrBYKTjhSgNF/07MOzgFZr5LYiMmIU769TDl2ZZnzsjaT4TylB53\n9/cvuAcvm8QGK+ywbLUyukqE3aExYKKDJABKsyxshvlIKqVJ9cerraIqb+rS4KH+\nIhVHqWH0m+VtqRyOsN9URKk6KilV9dEnmL3ovMKJlAFujR/6BElouVBpgEaC7ww=\n=pWa8\n-----END PGP SIGNATURE-----\n",
+        "../../code-ressourcen/flatlaf-sources.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpr+QwAAoJELfiZip2QKBRJhQH/i3rTo0rtUXwaJ8jpEBPP8kU\nboBuUG8Rap9BfjH+QjhrCZQsTRI/F0ps16wAZMmHquz2LLln/I9y4jFsjLL/JTaq\nxBlgbBGuGcSNAHwfsriG4G5r3KTTsUS5tAthuapdx9YF8hB1mfal2N+RyQeRZazp\nX4XOx4BJyv+0wH0bvEADc+C22abml/R1/66gEFcN2xfzXBj/HPIezznknp9rFAxF\nBeVN/CNo3OHQNlu4cy+iI8k9LgLlswyGODfXqBYMgtYTaepvwyzHnlEH54qlljzk\nWquWwnz8UdEjVRrvB1nCAmRkOvSFq45yKjD3gz0hvNX4voBsujFhHKYQRdBszxI=\n=hUnR\n-----END PGP SIGNATURE-----\n"
+      },
+      "version":"3.7.1",
+      "vulnerabilities":[]
     }
   ],
   "installed":{
-    "changes":"3.7.1\t: ## Change Log\r\n\r\n- System File Chooser:\r\n  - Update current filter before invoking approve callback and after closing   dialog. (issue #1065)\r\n  - Added `PatternFilter` to support glob file filter (e.g. `*.tar.gz`) on\r\n    Windows and on Linux, but not on macOS. (issue #1076)\r\n  - Fixed: System and Swing file dialogs were shown at the same time if\r\n    application has no other displayable window. (issue #1078)\r\n  - On Linux: Check whether required GSettings schemas are installed to avoid\r\n    application crash (occurred on NixOS with Plasma/KDE desktop). (issue #1069)\r\n- ComboBox: Added UI property `ComboBox.buttonFocusedEditableBackground`. (issue  #1068)\r\n- Dialog: Some client properties (e.g. `JRootPane.titleBarShowTitle`) did not\r\n  work before the dialog was made visible. (issue #1081)\r\n- Popup: Fixed scrolling popup painting issue on Windows 10 when a glass pane is\r\n  visible and frame is maximized. (issue #1071)\r\n- Slider: Styling `thumbSize` or `focusWidth` did not update slider size/layout. (PR #1074)\r\n- ToolBar: Grip disappeared when switching between Look and Feels. (issue #1075)\r\n- macOS: Popups (menus and combobox lists) were not always hidden when window is  resized. (issue #1082)\r\n- Extras:\r\n  - UI defaults inspector: Fixed NPE if color of `FlatLineBorder` is null. Also\r\n    use `FlatLineBorder` line color as cell background color in \"Value\" column. (PR #1080)\r\n  - `FlatDesktop`: Avoid unnecessary logging if desktop is not supported (e.g.\r\n    on NixOS with Plasma/KDE desktop).\r\n",
-    "date":"2026-07-07T10:57:23.167+02:00",
+    "changes":"3.7.2\t: ## Change Log\r\n\r\n- System File Chooser:\r\n  - macOS: `Cmd+A` (**Select All**) did not work in file dialog. (issue #1084)\r\n  - Block Swing input events (mouse, keyboard, etc.) while system file dialog is shown. (issue #1100)\r\n  - Windows: Fixed too small message dialogs (shown from approve callback). (issue #1119)\r\n  - Windows: Don't allow selecting non-filesystem nodes (e.g. \"This PC\") in \"Select Folder\" dialog. (issue #1126)\r\n- macOS: Fixed missing close/iconify/maximize buttons on inactive window, if\r\n  system appearance is dark, but application appearance is light. (issue #1032)\r\n- Linux with JetBrains Runtime: Fixed mouse \"jumping\" to other position when\r\n  moving window on scaled secondary screen, if using FlatLaf window decorations. (issue #1103)\r\n- Linux with OpenJDK Project Wakefield (e.g. JetBrains JBR 25) and VM option\r\n  `-Dawt.toolkit.name=WLToolkit` (issue #1107):\r\n  - Disabled FlatLaf window decorations because of bug [JBR-10322](https://youtrack.jetbrains.com/issue/JBR-10322).\r\n  - Disabled System File Chooser because application hangs after closing it. Uses `JFileChooser` instead.\r\n- TableHeader: Fixed custom table header renderer background stops painting\r\n  after hover interactions. (issue #1089)\r\n- TextComponents: Fixed preferred width when leading/trailing components or\r\n  icons are present. (issue #1110)\r\n- Tree: Fixed repainting multi-selection when tree looses or gains focus. (issue #1122)\r\n- JideTabbedPane: Support card tabs. (PR #1094)\r\n- Native libraries in Eclipse RCP: Fixed exception when runtime path contains  spaces. (issue #1102)\r\n",
+    "date":"2026-07-29T12:21:47.47+02:00",
     "dependencies":null,
     "description":"Flat Look and Feel",
     "files":[
@@ -281,8 +304,8 @@
       "meta.json"
     ],
     "hashes":{
-      "flatlaf.jar":"11f498f3c89596a782fceaa727c853a665067aeabc09bd682dc53b3ef237d0c7",
-      "../../code-ressourcen/flatlaf-sources.jar":"fbc0fa0f2ccdb8a65c4f1e35bdc54547737c0ad1cf8fe029b4c969943183822c"
+      "flatlaf.jar":"917aff3963c88d797d0fd9b9ccbd70f7681c101df9d11c59e2bc7a3a6c0fabf4",
+      "../../code-ressourcen/flatlaf-sources.jar":"f3c232cde899335b3fc342e9fbd0e584bfe4bc24e20eddc415858d0d2d7cda10"
     },
     "licenses":[{
       "name":"The Apache License, Version 2.0",
@@ -291,10 +314,10 @@
     "minJRE":"JVM_1_8",
     "name":"FlatLaf",
     "signatures":{
-      "flatlaf.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpr+QwAAoJELfiZip2QKBRElYIAMGtsuyBKbDIa7PKmgmnlyTj\na9r9Wzv70Yn/lPWNPxyHiB2WEsP1J+g/8fOqSDy9/EB7c244JjGMN+zmlGYIPvzM\nCPrPABdnHCX01FYbD8/LDUyp52sxi5x6UKdN9DNaZ36qKSSXnAsIvoNYH9JS/A4s\nFJPfFeo+ziChTrBYKTjhSgNF/07MOzgFZr5LYiMmIU769TDl2ZZnzsjaT4TylB53\n9/cvuAcvm8QGK+ywbLUyukqE3aExYKKDJABKsyxshvlIKqVJ9cerraIqb+rS4KH+\nIhVHqWH0m+VtqRyOsN9URKk6KilV9dEnmL3ovMKJlAFujR/6BElouVBpgEaC7ww=\n=pWa8\n-----END PGP SIGNATURE-----\n",
-      "../../code-ressourcen/flatlaf-sources.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJpr+QwAAoJELfiZip2QKBRJhQH/i3rTo0rtUXwaJ8jpEBPP8kU\nboBuUG8Rap9BfjH+QjhrCZQsTRI/F0ps16wAZMmHquz2LLln/I9y4jFsjLL/JTaq\nxBlgbBGuGcSNAHwfsriG4G5r3KTTsUS5tAthuapdx9YF8hB1mfal2N+RyQeRZazp\nX4XOx4BJyv+0wH0bvEADc+C22abml/R1/66gEFcN2xfzXBj/HPIezznknp9rFAxF\nBeVN/CNo3OHQNlu4cy+iI8k9LgLlswyGODfXqBYMgtYTaepvwyzHnlEH54qlljzk\nWquWwnz8UdEjVRrvB1nCAmRkOvSFq45yKjD3gz0hvNX4voBsujFhHKYQRdBszxI=\n=hUnR\n-----END PGP SIGNATURE-----\n"
+      "flatlaf.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJqT2+/AAoJELfiZip2QKBRHd4IAJGI9GNbcTfniTgFAvO71L+H\nd8L20+1PDFfOqWsOIMx5yj2pbw4GZRLurZv7ilXYcWUtailfjEfa2gOyEhW8Vvh8\nIcOcLD+T8i7TPPVqoih9L2avztStEeUxrtxUnTWYkzwdMn3GvXVxZfHkI0NL9K7m\nuk5cwRhHBhH0BftNuymww78guIdbnfzFtODwERedqv5yhqnos6jsF5wWB9xEfDnM\nuS/ldsT2ZZNw3sAOP83zXPaH7+zlPGfmHKha9LWUWrj8r6Xqj11YcYLaDVEV+Iwm\nv4bjVstUVCJuZ632MsaEYEHOI2Y4PFjYaCNvskMVar3ic6+pw/FqEGHwfy3PyM8=\n=myFD\n-----END PGP SIGNATURE-----\n",
+      "../../code-ressourcen/flatlaf-sources.jar":"-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCgAGBYJqT2+/AAoJELfiZip2QKBR45YH+weceDoAk790rH36u1D4+4Yb\nBjue8UtGcciH7MtCl4xr2WxSR5YXVJdS6PuIwXNIGSg+obIKzHJoR4wVR2hXdts8\nTrMLFIALsEiTuoGtJE7CQdveO2Y/gGRcH0V3oQjOjO/Ug24od1avPwFOJ27KpEFN\nNFi+9lOfLYxg0st7xoe6dEB5TGKH4sHkopI7p3zviKQregOs0D5XY+aQtUFLfMzo\nUGy9xI/i4OP4V0Iu5yj/jxnHypxSBP6vMpazf2tU8jafIc1LyD5oqnyTV5zBrbHm\nqfFQ45uypRbAM41YyXKhiXx1bqv0ZTA4oYjzN8Z3dmQ4+jXQkwXNh4EgOvIPRHI=\n=PZCv\n-----END PGP SIGNATURE-----\n"
     },
-    "version":"3.7.1",
+    "version":"3.7.2",
     "vulnerabilities":[]
   },
   "minJRE":"1.8",

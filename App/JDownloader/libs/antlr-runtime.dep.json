@@ -57,7 +57,7 @@
     "version":"3.4",
     "vulnerabilities":[]
   },
-  "minJRE":"1.6",
+  "minJRE":"1.8",
   "minReleasedAgeDays":null,
   "provider":"maven",
   "renames":null,

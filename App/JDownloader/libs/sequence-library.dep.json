@@ -52,7 +52,7 @@
     "version":"1.0.2",
     "vulnerabilities":[]
   },
-  "minJRE":"1.6",
+  "minJRE":"1.8",
   "minReleasedAgeDays":null,
   "provider":"maven",
   "renames":null,
