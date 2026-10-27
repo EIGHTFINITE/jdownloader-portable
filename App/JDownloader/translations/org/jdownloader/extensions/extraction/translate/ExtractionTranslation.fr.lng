@@ -120,3 +120,7 @@ tooltip_NameColumn=Nom de l'archive
 tooltip_empty=Extraction non réalisée
 unknown=Inconnu
 unknown_tt=Un lien pour cette partie existe mais il est peut être deconnecté
+plugins_optional_extraction_status_pausedForOtherCrc=En pause - attente de la fin d'une autre vérification CRC
+contextmenu_abort=Annuler l'extraction
+cannot_extract_incomplete=Impossible d'extraire %s1. L'archive est incomplète !
+if_file_exists_dont_show_again=Ne plus afficher pour cette archive
